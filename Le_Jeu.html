@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <style>
+       .header {
+        background-image: url("header nice11.jpg");
+           background-size: 100% 100%;
+        text-align: left;
+        padding: 7%;
+        resize: horizontal;
+        overflow:auto;
+        text-indent: 2%;
+        text-shadow: 3px 2px 2px white;
+        color: #702121;
+        z-index: 1;
+        max-width: 100%;
+      }
+      .header{
+  box-shadow: 0 2.5px 9px #3d3d3d;
+  border-bottom: 0.5px #6d6d6d;
+}
+body{
+  background-color: #e0e1e2;
+  margin: auto;
+}
+.button{
+  background-color: grey;
+  border:none;
+  color: #dcdde2;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: auto;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  box-shadow: 10px 10px 15px grey;
+  position: absolute;
+  right: 10px;
+  top: 1%;
+  width: 15%;
+  height: 6%;
+  border-radius: 3px;
+  display: inline-block;
+  resize: both;
+}
+.button1 {
+   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  box-shadow: -3px 1px 10px white;
+}
+.button2:hover {
+   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  box-shadow: -3px 1px 10px grey;
+  background-color: #545659;
+  color: white;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.4s;
+}
+.button span: after{
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  transition: 0.4s;
+  color: #FFFFFF;
+  top: 0;
+  right: -20px;
+}
+.button: hover span {
+   padding-right: 5%;
+  color: white;
+}
+.button: hover span: after{
+  opacity: 0;
+  right: 1;
+  color: white; 
+}
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.topnav a.active {
+    background-color: #702121;
+    color: white;
+}
+.col-1 {width:8.33%}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+      
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+              .title {
+            color: #8C2222;
+            text-shadow: 2px 3px 2px grey;
+            font-family: Arial Black, Gadget, sans-serif;
+            font-size: 160%;
+            margin-top: 6%;
+        }
+                .subtitle1 {
+            color: #BD3C3C;
+            text-shadow: 2px 3px 2px grey;
+            margin-top: 1%;
+            font-family: Arial Black, Gadget, sans-serif;
+            font-size: 145%;
+        }
+              .subtitle2 {
+            color: #BD3C3C;
+            text-shadow: 2px 3px 2px grey;
+            margin-top: 3%;
+            font-family: Arial Black, Gadget, sans-serif;
+            font-size: 145%;
+        }
+          .paragraph {
+            margin-top: 1%;
+            font-family: Verdana, Gadget, serif;
+            font-size: 100%;
+            color: black;
+            max-width: 60%;
+            text-align: justify;
+        }
+        .subtitle3 {
+            color: #D64545;
+            text-shadow: 2px 3px 2px grey;
+            margin-top: 5%;
+            font-family: Arial Black, Gadget, sans-serif;
+            font-size: 125%;
+        }
+          .image{ 
+            box-sizing: border-box;
+        }
+   .image1{    width: 95%;
+            height: auto;
+            margin-top:2%;
+          margin-bottom: 3%;
+       
+       display:block;
+        }
+        .row {
+  display: flex;
+}
+        .column {
+  flex: 100%;
+  padding: auto;
+}         
+        .image2{
+            margin-left: 55%;
+        }
+        .image3{
+            margin-right: 55%;
+        }
+        .end{
+        margin-bottom: 10%;
+        }
+        .start{
+        margin-top: 10%;
+        }
+        .start2{
+        margin-top: 7%;
+        }
+        .down{
+        margin-top: 10%;
+        }
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LTM Robotics 2018.19</title>
+ <header class="header" style="font=size: 140%"><b></b></header>
+  </head>
+    <body>
+<a href="file:///home/chronos/u-4bce57fb241e84ee34522c5a64677a987a7701d4/Downloads/website/The_Game.html"><button class="button button1 button2 col-2" style="vertical-allign:middle"><span>English</span>
+      </button></a>
+      <div class="topnav">
+        <a href="file:///home/chronos/u-4bce57fb241e84ee34522c5a64677a987a7701d4/Downloads/website/Menu.html">Menu</a>
+        <a href="file:///home/chronos/u-4bce57fb241e84ee34522c5a64677a987a7701d4/Downloads/website/Notre_%C3%89cole.html">Notre &Eacute;cole</a>
+        <a class="active" href="file:///home/chronos/u-4bce57fb241e84ee34522c5a64677a987a7701d4/Downloads/website/Le_Jeu.html">Le Jeux Vertigoal</a>
+        <a href="file:///home/chronos/u-4bce57fb241e84ee34522c5a64677a987a7701d4/Downloads/website/Notre_Robot.html">Notre Robot</a>
+        <a href="file:///home/chronos/u-4bce57fb241e84ee34522c5a64677a987a7701d4/Downloads/website/Notre_%C3%89quipe.html">Notre &Eacute;quipe</a>
+      </div>
+          <div class="start"></div>         <center class="title">Le jeu Vertigoal</center>
+        <center class="subtitle1">L'objectif</center>
+   <center><div class="paragraph">
+L'objectif de ce jeu de robotique est de marquer autant de points que possible pour votre &eacute;quipe en pla&ccedil;ant des balles de tennis dans diff&eacute;rentes cibles plac&eacute;es sur le terrain.</div></center>
+       <div class="start2"></div> <center class="subtitle2">Les r&egrave;gles</center>
+        <center> <div class="paragraph"><div class="subtitle3">Les &eacute;quipes:</div><ul><li><p>Dans le jeu Vertigoal, deux équipes, une équipe bleue et une équipe jaune, jouent simultanément sur le terrain.
+ </p></li>
+            <li><p>
+Chaque équipe aura deux robots de différentes écoles qui changeront de partie en partie.</p></li></ul></div></center>
+        <center> <div class="paragraph"><div class="subtitle3">Le terrain de jeu:</div><ul><li><p>Le terrain de jeu du jeu Vertigoal ressemble à un escalier. Il est composé de cinq sections de la même taille, mais elles ne sont pas au même niveau horizontal. Où niveau 1 est le plus bas et niveau 5 le plus haut.</p></li></ul></div>
+          <div class="row"> 
+              <div class="column"><img src="staircase... good.jpg" alt="staircase" border="4" style="border-color: #242424; width: 35%; height: auto;" class="image image1 image2"></div>
+<div class="column">    <img src="48952629_735307353494797_7992482612239138816_n.jpg" alt="stair" border="4" style="border-color: #242424; width: 35%; height: auto;" class="image image1 image3"></div></div>
+      <div class="paragraph">
+            <ul><li><p>
+les zones de départ sont situées sur les zones 1,3 et 5.</p></li></ul>
+            <ul><li><p>Les distributeurs de pièces de jeu sont situés aux premier, quatrième et cinquième niveaux.</p></li></ul>
+            <ul><li><p>
+Les cibles sont situées aux deuxième, troisième et quatrième niveaux.</p></li></ul>
+            <div class="subtitle3">Les pi&egrave;ces de jeu:</div><ul><li><p> Ces "pièces du jeu" déjà mentionnées à plusieurs reprises sont des balles de tennis de couleurs différentes. </p></li></ul>
+            <ul><li><p>Il y a 70 balles bleues, 70 jaunes et 2 rouges, ce qui fait un total de 142 balles de tennis.<p></li></ul>
+        <ul><li><p>Le robot d'une école peut contenir n'importe quelle quantité de pièces de jeu à la fois, à la condition que ce soit la couleur de son équipe.<p></li></ul>
+            <ul><li><p>
+Les balles de tennis sont toujours placées dans 5 distributeurs sur le terrain au début de chaque match: chaque équipe a deux distributeurs spécifiques à leur équipe (qui ont 15 pi&egrave;ce de jeu de la couleur de leur équipe) et il y en a un commun aux deux équipes (qui a 20 balles des deux couleurs et deux boules rouges.)</p></li></ul></div>
+             <img src="cylinder... good.jpg" alt="staircase" border="4" style="border-color: #242424; width:20%; height: auto;" class="image image1">
+            <div class="paragraph">
+            <div class="subtitle3">
+Mettre en jeu des pièces de jeu:</div>
+            <ul><li><p>
+Chaque robot ne peut être préchargé qu'avec un maximum de 10 balles de tennis. Si le robot en tient moins, les pièces de jeu restantes doivent être placées sur le sol de la zone de départ du robot.</p></li></ul>
+                        <ul><li><p>Les robots peuvent et doivent se déplacer sur le terrain afin de retirer les pièces de jeu de leurs distributeurs et d’obtenir des points.</p></li></ul> 
+            <ul><li><p>
+Pour libérer les balles de tennis de leurs distributeurs, le mécanisme du niveau 1 doit être activé.</p></li></ul>
+            <ul><li><p>
+Pour libérer les pièces de jeu du distributeur inclinable au cinquième niveau du terrain, la corde doit être tirée par l'une des équipes.</p></li></ul>            </div>
+                    <img src="need... good.jpg" alt="staircase" border="4" style="border-color: #242424; width:20%; height: auto;" class="image image1">
+            <div class="paragraph">
+                        <ul><li><p>
+Une pièce de jeu, lorsqu'elle est au sol, peut être ramassée par les robots de n'importe quelle équipe. La couleur n'a pas d'importance.<p></li></ul>
+
+ <ul><li><p>
+Il est interdit de retirer intentionnellement des balles de tennis du terrain de jeu ou de stocker celles des autres équipes dans votre robot. </p></li></ul>
+            
+             <div class="subtitle3">Marquer des points:
+</div>                          <ul><li><p>
+Pour marquer des points, des pièces de jeu doivent être placées dans les cibles situées sur le terrain.</p></li></ul>
+              <ul><li> <p>
+Il y a 3 types de cibles qui peuvent être marqués.</p>
+ 
+                  <ul><li><p>
+Le seau supérieur, aux niveaux 2 et 4, qui donne 40 points;</p></li></ul>
+                  
+                  <ul><li><p>Le seau inférieur, situé aux niveaux 2 et 4, qui donne 20 points;</p></li></ul>
+                  
+                    <ul><li><p>
+Deux prismes trapézoïdaux, situés au niveau 3, donnent 10 points.</p></li></ul> </li></ul>
+         </div>
+     <div class="row">
+          <div class="column"> <img src="buckets... good.jpg" alt="buckets" class="image image1 image2" border="4" style="width: 30%; height: auto; border-color: #242424;"></div>
+         <div class="column">   <img src="prism... good.jpg" alt="prism" class="image image1 image3 down" border="4" style="width: 35%; height: auto; border-color: #242424;"></div></div>
+            <div class="paragraph">
+              <ul><li><p>Les balles de tennis jaunes donnent des points à l’équipe jaune et les balles de tennis bleues donnent des points à l’équipe bleue, quelle que soit l’équipe qui a placé la pièce de jeu dans la cible.
+</p></li></ul>
+            
+              <ul><li><p>
+Les balles de tennis rouges ne valent pas de points, mais servent comme multiplicateurs. Si au moins 1 pièce rouge se trouve dans une cible à la fin de la partie, la valeur de toutes les pièces de jeu de cette cible sera doublée. Mais, si les deux se trouvent dans la même cible, la valeur n’est encore que doublée.</p></li></ul>
+            
+              <ul><li><p>
+Aucun point n'est attribué pour retirer des balles de tennis d'un distributeur</p></li></ul>
+            
+              <ul><li><p>
+Aucun point n'est attribué aux pièces de jeu lorsqu'elles se trouvent dans le distributeur, sur des robots ou sur le terrain de jeu à la fin de la partie.</p></li></ul>
+            
+              <ul><li><p>
+Pour partager des points avec vos coéquipiers, votre robot doit contribuer au score en mettant au moins une pièce de jeu dans une cible. Le robot sera alors défini comme un robot de partage et partagera les points de l'équipe.</p></li></ul>
+            
+              <ul><li><p>
+Le score final de chaque équipe est évalué à la fin du jeu, bien qu'un score estimé puisse apparaître à l'écran pendant le déroulement du jeu.</p></li></ul>
+              <div class="subtitle3">Arbitration and P&eacute;nalit&eacute;es:</div>
+              <ul><li><p> Les arbitres ont toujours le dernier mot.
+</p></li></ul>
+            
+            <ul><li><p>
+Les arbitres sur le terrain ont toute l'autorité pour juger tous les aspects du jeu, y compris:</p>
+                
+                            <ul><li><p>
+empêcher les robots de bloquer négativement les autres robots;</p></li></ul>
+                            <ul><li><p>empêcher les robots d'endommager le terrain de jeu et les pièces de jeu;
+</p></li></ul>
+                            <ul><li><p>empêcher les robots de ne pas respecter l'espace aérien sur les bords du champ;
+</p></li></ul>
+            <ul><li><p>
+faire de leur mieux pour assurer que les chiffres affichés sur les écrans sont exacts et mis à jour dès que possible; cependant, leur décision annule tout ce qui est affiché sur les écrans.</p></li></ul>
+</li></ul>
+                        <ul><li><p>Si l'un des arbitres dit qu'un robot est dangereux, ils risquent d'être disqualifiés.
+</p></li></ul>
+            <ul><li><p>
+Divers objets peuvent être placés, intentionnellement ou non, sur ou autour du terrain de jeu par un robot, à condition qu'ils soient retirés du terrain de jeu par le robot avant la fin de la partie. Si des objets ne sont plus en contact avec le robot à la fin, il sera passible d'une p&eacute;nalit&eacute; individuelle de 4% de son score total pour le partie pour chaque objet laissé sur ou autour du terrain.</p></li></ul>
+                        <ul><li><p>
+Si du liquide suinte d'un robot au terrain de jeu, le score total du robot pour la partie sera réduit à 0.</p></li></ul>
+            <ul><li><p>Le score minimum qu'un robot peut avoir pour n'importe quel partie est 0.
+</p></li></ul>
+                        <ul><li><p>Un robot ne peut pas libérer de pièces de jeu des distributeurs de l'équipe adverse. Si tel est le cas, le robot qui libère la pièce de jeu recevra une pénalité de 20% appliquée à son score total pour cette partie.
+</p></li></ul>
+            <ul><li><p>
+Si une équipe estime que son robot a besoin d'assistance sur le terrain de jeu pendant une partie, son pilote peut demander à l'arbitre de l'assister. Si cela se produisait, une pénalité de 100 points n'affecterait que le robot assisté. Les arbitres se réservent le droit de ne pas assister le robot, même si le pilote le lui demande.</p></li></ul>
+                        <ul><li><p>
+Les pièces de jeu qui sont délibérément projetées hors du terrain de jeu par un robot se traduira en pénalité de 40 points pour le robot ainsi que pour son coéquipier.</p></li></ul>
+            
+                  <div class="subtitle3">
+Progression de la partie:</div>
+            <ul><li><p>Les robots bleus commencent le jeu dans deux des trois zones de départ bleues du terrain de jeu, tandis que les robots jaunes démarrent dans deux des trois zones de départ jaunes du terrain de jeu.</p></li></ul></div>
+            <img src="48959200_2016611561973169_2481997296108044288_n.jpg" alt="prism" class="image image1" border="4" style="width: 25%; height: auto; border-color: #242424;">
+            <div class="paragraph">
+            
+            <ul><li><p>Tous les jeux durent 5 minutes. Lorsque le temps de jeu est terminé, toutes les parties de tous les robots doivent cesser de bouger. Les pièces de jeu ne seront prises en compte que lorsqu'elles cesseront de bouger, même si cela se produit une fois que le temps de jeu est écoulé. Tous les points obtenus par une équipe après la fin de la partie seront annulés.
+</p></li></ul>
+            <ul><li><p>Les membres de l'équipe ne doivent pas interférer avec les objets sur le terrain pendant le jeu, y compris le contact avec les robots et les pièces de jeu.</p></li></ul>
+            
+                        <ul><li><p>Tous les robots doivent porter une étiquette indiquant le nom et le numéro de l'école, ainsi que la couleur de l'équipe correspondante pour la partie. Celles-ci doivent être visibles à la foule et aux arbitres. S'ils ne le sont pas, ils ne pourront pas participer pendant le match.
+</p></li></ul>
+            
+            <ul><li><p>Si un robot ne sort pas complètement de sa zone de départ ou s'il est simplement absent pendant un match, il sera consid&eacute;r&eacute; comme un robot inactif. Lorsque cela se produit, le coéquipier du robot inactif aura son score pour la partie multiplié par 1.5 pour compenser cet inconvénient. Ces robots inactifs seront également retirés du terrain après 30 secondes d'inactivité.
+</p></li></ul>
+            <ul><li><p>Si un robot place une pièce de jeu dans une cible et ne s'est pas déplacé de la zone de départ, elle ne sera pas considérée comme un robot inactif et partagera les points de l'équipe.
+</p></li></ul>
+            
+            <ul><li><p>Si un robot sort de sa zone de départ puis arrête de bouger, il sera considéré comme un robot en panne. Si le robot casse avant de satisfaire aux exigences de partage, il ne partagera pas les points de l'équipe, mais son coéquipier n'aura pas son score multiplié par 1.5.
+</p></li></ul>
+            
+                        <ul><li><p>Après le signal sonore indiquant qu'une partie est terminée, les membres de l'équipe ne sont pas autorisés à entrer sur le terrain de jeu, à toucher un robot ou les pièces de jeu tant que l'arbitre en chef ne leur a pas demandé de le faire.</p></li></ul>
+            
+             <div class="subtitle3">Pilote and co-pilote:</div>
+                        <ul><li><p>Le pilote, le co-pilote et le robot de chaque équipe participant a la partie suivante doivent être dans la "zone de pont" lorsque l'avertisseur sonore se termine de la partie précédente. Si ce n'est pas le cas, une pénalité sera donnée.
+</p></li></ul>
+                                    <ul><li><p>Si un robot, pilote ou co-pilote n'est pas prêt, la partie commencera sans eux.
+</p></li></ul>
+
+                        <ul><li><p>
+Les pilotes et les co-pilotes doivent rester assis pendant toute la partie dans leurs sièges désignés, qui sont placés dans les zones désignées autour du terrain.</p></li></ul>
+
+         </div></center>
+        <div class="end"></div>
+          </body>
+</html>
