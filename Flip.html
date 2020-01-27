@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <style>
+     .header {
+            background-image: url("header nice10.jpg");
+            background-size: 100% 100%;
+            text-align: left;
+            padding: 7%;
+            resize: horizontal;
+            overflow: auto;
+            text-indent: 2%;
+            text-shadow: 3px 2px 2px white;
+            color: #702121;
+            z-index: 1;
+            max-width: 100%;
+        }
+        .header{
+            box-shadow: 0 2.5px 9px white;
+            border-bottom: 0.5px #6d6d6d;
+        }
+             body{
+             background-color: white;
+             margin:auto;
+             Background-size: cover;
+             background-repeat: no-repeat;
+             width:100%;
+             transition: background-color 500ms ease-in;
+
+        }
+       .button{
+            background-color: black;
+            border: none;
+            color: white;
+            padding: -3px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: auto;
+            cursor: pointer;
+            transition-duration: 0.4s;
+            transition-duration: 0.4s;
+            box-shadow: 1px 1px 5px black;
+            position: absolute;
+            right: 10px;
+            top: 1%;
+            width: 5%;
+            height: 6%;
+            border-radius: 20px;
+            display: inline-block;
+            resize: both;
+            font-family: cursive;
+            animation-name: slide;
+            animation-duration: 2s;
+        }
+        @keyframes slide{
+            0%{right: -130px;}
+            50%{right: 50px;}
+            100%{right: 10px;}
+            
+        }
+        .button1{
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            box-shadow: -3px 1px 10px white;
+        }
+        .button:hover{
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+            box-shadow: -3px 1px 10px grey;
+            background-color: #302E30;
+            color: white;
+        }
+        .button span{
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.4s;
+        }
+        .button span: after{
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            transition: 0.4s;
+            color: #FFFFFF;
+            top: 0;
+            right: -20px;
+        }
+        .button: hover span{
+            padding-right: 5%;
+            color: white;
+        }
+        .button: hover span :after{
+            opacity: 0;
+            right: 1;
+            color: white;
+        }
+        .topnav{
+            background-color: black;
+            overflow: hidden;
+            box-shadow: 5px 10px 25px #1D1D1D;
+        }
+        .topnav a{
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            font-family: cursive;
+        }
+        topnav a:hover{
+            background-color: white;
+            color: black;
+        }
+        .topnav a.active{
+            background-color: #FF6D00;
+            color: black;
+            font-weight: bold;
+            font-family: cursive;
+            border-style: solid;
+            border-radius: 10px;
+        }
+.col-1 {width:8.33%}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+      
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+          .title {
+           text-shadow: 2px 3px 2px grey;
+             text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 3px 1px 0 #000;
+           font-family: cursive;
+           font-size: 220%;
+           color: #FC69A8;
+           margin-top: 11%;
+           font-weight:bold;
+                     }
+            .subtitle1 {
+        font-family: cursive;
+        font-size: 170%;
+        margin-top: 4%;
+        Font-weight: bold;
+        color: #FBA737;
+         text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 2px 1px 0 #000;
+        }
+              .subtitle2 { 
+        font-family: cursive;
+        font-size: 170%;
+        margin-top: 4%;
+        Font-weight: bold;
+        color: #FBA737;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 2px 1px 0 #000;
+        }
+          .paragraph {
+            margin-top: 1%;
+            font-family: cursive;
+            font-size: 100%;
+            color: black;
+            max-width: 60%;
+            text-align: justify;
+        }
+        .subtitle3 {   
+        font-family: cursive;
+        font-size: 125%;
+        margin-top: 4%;
+        Font-weight: bold;
+        color: #FBEF37;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 2px 1px 0 #000;
+        }
+        .image{ 
+            box-sizing: border-box;
+        }
+   .image1{    width: 95%;
+            height: auto;
+            margin-top:2%;
+          margin-bottom: 3%;
+       
+       display:block;
+        }
+        .row {
+  display: flex;
+}
+        .column {
+  flex: 100%;
+  padding: auto;
+}         
+        .image2{
+            margin-left: 55%;
+        }
+        .image3{
+            margin-right: 55%;
+        }
+        .end{
+        margin-bottom: 10%;
+        }
+        .start{
+        margin-top: 10%;
+        }
+        .start2{
+        margin-top: 7%;
+        }
+        .down{
+        margin-top: 10%;
+        }
+           .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+        .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+               @media screen and (max-width: 1150px) {
+     
+        }
+                .paragraph {
+            margin-top: 1%;
+            font-family: cursive;
+            font-size: 100%;
+            color: black;
+            max-width: 65%;
+            text-align: justify;
+        }
+                @media screen and (max-width: 925px) {
+        fieldset{
+            background-color:white; width:85%;
+margin-left:14%;
+margin-bottom:5%; 
+border-color:black; 
+border-width: 4px;
+   box-shadow: 0px 4px 10px;
+                    }
+                            .paragraph {
+            margin-top: 1%;
+            font-family: cursive;
+            font-size: 100%;
+            color: black;
+            max-width: 70%;
+            text-align: justify;
+        }
+
+}
+          @media screen and (max-width: 735px) {
+                      fieldset{
+            background-color:white; width:95%;
+margin-left:14%;
+margin-bottom:5%; 
+border-color:black; 
+border-width: 4px;
+   box-shadow: 0px 4px 10px;
+                    }
+                      .paragraph {
+            margin-top: 1%;
+            font-family: cursive;
+            font-size: 100%;
+            color: black;
+            max-width: 75%;
+            text-align: justify;
+        }
+                  .topnav a{
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 13px;
+            font-family: cursive;
+        }
+}
+                @media screen and (max-width: 485px) {
+                            fieldset{
+            background-color:white; width:95%;
+margin-left:10%;
+margin-bottom:5%; 
+border-color:black; 
+border-width: 4px;
+   box-shadow: 0px 4px 10px;
+                    }
+                              .paragraph {
+            margin-top: 1%;
+            font-family: cursive;
+            font-size: 100%;
+            color: black;
+            max-width: 90%;
+            text-align: justify;
+        }
+                      .topnav a{
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 6px;
+            font-family: cursive;
+        }
+
+        }
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LTM Robotics 2020</title>
+ <header class="header" style="font=size: 140%"><b></b></header>
+  </head>
+    <body class="fade">
+<a href="file:///home/chronos/u-592d3ffee1b6e2a08fd84d8acacc5cd6fcf25e8e/MyFiles/Robotics%20Website/jeu.html"><button class="button button1 button2 col-2" style="vertical-allign:middle"><span>Fran&ccedil;ais</span>
+      </button></a>
+      <div class="topnav" id="myHeader">
+       <a href="file:///home/chronos/u-592d3ffee1b6e2a08fd84d8acacc5cd6fcf25e8e/MyFiles/Robotics%20Website/home.html">Home</a>
+        <a href="file:///home/chronos/u-592d3ffee1b6e2a08fd84d8acacc5cd6fcf25e8e/MyFiles/Robotics%20Website/Our_School.html">Our School</a>
+        <a class="active" href="file:///home/chronos/u-592d3ffee1b6e2a08fd84d8acacc5cd6fcf25e8e/MyFiles/Robotics%20Website/Flip.html">The Flip Game</a>
+        <a href="file:///home/chronos/u-592d3ffee1b6e2a08fd84d8acacc5cd6fcf25e8e/MyFiles/Robotics%20Website/Our_Robot.html">Our Robot</a>
+        <a href="file:///home/chronos/u-592d3ffee1b6e2a08fd84d8acacc5cd6fcf25e8e/MyFiles/Robotics%20Website/Team.html">Our Team</a></div>
+        <fieldset style="background-color:white; width:70%;
+margin-left:14%;
+margin-bottom:5%; 
+border-color:black; 
+border-width: 4px;box-shadow: 0px 4px 10px;">
+        <div class="start"></div>    <center class="title">The Flip Game</center>
+           <center class="subtitle1">What is it?</center>
+   <center><div class="paragraph">The Flip game is a CRC robotics game. This year, it will take place at Vanier College from February 13th to 15th. </div></center> 
+        <center class="subtitle1">The goal</center>
+   <center><div class="paragraph">In order to win this robotics competition, a team must have the most bean bags accumulated in their team's bin.</div></center>
+        <div class="start2"></div> <center class="subtitle2">The rules</center>
+        <center> <div class="paragraph"><div class="subtitle3">Teams:</div><ul><li><p>In the Flip game, two teams, a blue and yellow team, are on the playing field at the same time playing against each other. </p></li>
+            <li><p>Each team will have two robots from different schools which will change from heat to heat.</p></li></ul></div></center>
+        <center> <div class="paragraph"><div class="subtitle3">The playing field:</div><ul><li><p>The playing field is a rectangle with only one level.</p></li></ul></div>
+              <div class="column"><img src="Screenshot 2020-01-05 at 1.26.55 AM.png" alt="playingfield" border="4" style="border-color: #242424; width: 35%; height: auto; margin-left: 0;" class="image image1 image2"></div>
+      <div class="paragraph">
+            <ul><li><p>The starting zones, two blue and two yellow, are located only on one side of the field. They are shown as tiles.</p></li></ul>
+            <ul><li><p>A conveyor belt is located on the other side of the field, opposite of the starting zones, where the robots can't reach.</p></li></ul>
+          <div class="column"><img src="Screenshot 2020-01-05 at 1.19.24 AM.png" alt="conveyor" border="4" style="border-color: #242424; width: 35%; height: auto; margin-left: 33%;" class="image image1 image2"></div>
+            <ul><li><p>A twister actuator is on the playing field, where a perimeter painted in red surrounds it. This perimeter shows where it is a possibility to come into countact with the actuator; it isn't forbidden to enter this area, but it's at the the robot's own risk. If a robot deliberately attempts to harm another robot, there will be penalties.</p></li></ul>
+            <div class="column"><img src="Screenshot 2020-01-05 at 1.23.29 AM.png" alt="Twisterfull" border="4" style="border-color: #242424; width: 35%; height: auto; margin-left: 33%;" class="image image1 image2"></div>
+          <ul><li><p>There are also "Mushroom actuators" outside of the rectangular field. But, the area underneath it is also considered as the playing field.</p></li></ul>
+                  <div class="column"><img src="Screenshot 2020-01-05 at 1.20.00 AM.png" alt="mushroomactuator" border="4" style="border-color: #242424; width: 35%; height: auto; margin-left: 33%;" class="image image1 image2"></div>
+            <div class="subtitle3">The game pieces:</div><ul><li><p>The game pieces for the Flip game are bean bags. </p></li></ul>
+            <ul><li><p>These bean bags can have two colors. Red game pieces, which are dropped during the game at a certain rate on the conveyor, and the black ones, which are dropped during the game when a power-up is activated. These black bags are worth  30pts.</p></li></ul>
+        <ul><li><p>There are no limits to the amount of GPs that are put in the game.</p></li></ul>
+            <ul><li><p>The robots can't touch the bean bags since thet aren't active playing pieces. </p></li></ul> 
+            </div>
+            <div class="paragraph">
+                <div class="subtitle3">The Conveyor Belt:</div>
+                <ul><li><p>The conveyor's speed and its direction are two independant variables, and they can take different values when different power-ups are activated during a game.</p></li></ul>
+                <ul><li><p>Two bins are located at each end of the conveyor. One of them is blue and the other is yellow. Each color represents the two teams.</p></li></ul>
+                <ul><li><p>At the beggining of a game, the conveyor doesn't move.</p></li></ul>            
+          <ul><li><p>The conveyor only starts moving when a team activates their Hinged Board actuator. The team that activates it will have the conveyor move toward its bin, and as a result, will have bean bags fall in it.</p></li></ul> 
+                <ul><li><p>Every 30 seconds, the direction of the conveyor changes.</p></li></ul>
+                
+            <div class="subtitle3">Putting game pieces into play:</div>
+            <ul><li><p>Game pieces are put in the game through a dispenser on the middle of the conveyor at a certain rate.</p></li></ul>
+                        <ul><li><p>At the beggining of the game, a bean bag is dropped every 3 seconds.</p></li></ul> 
+            </div>
+                   
+            <div class="paragraph">
+             <div class="subtitle3">Scoring points:</div>                          <ul><li><p>Every time a bag falls in a team's bin, points are scored.</p>
+              <ul><li> <p>A red game piece is worth 5 points.</p></li></ul>
+ 
+                <ul><li><p>A black game piece is worth 30 points.</p></li></ul></li></ul>
+                  
+                  <ul><li><p>In order to share points with a teammate, a robot muct activate at least one actuator during the game.</p></li></ul>
+                  
+                       <ul><li><p>The final score for each team is assessed at the end of the game, although an estimated score might appear on the display as the game is in progress.</p></li></ul>
+                    </div>
+    
+            <div class="paragraph">
+                <div class="subtitle3">Power-Ups</div>
+                <ul><li><p>Activating an actuators will activate a specific power-up. Every actuator is linked to one of these power-ups.</p></li></ul>
+   <ul><li><p>A green LED will light up when an actuator is activated.</p></li></ul>
+   <ul><li><p>There are 4 power-ups that are linked to specific actuators:</p>
+          <ul><li><p><b>Increasing the speed of the conveyor with the "Mushroom actuators" for 20 seconds.-</b> The closest one to the field will increase it by one and a half its normal speed, whereas the farthest one will make it twice as fast. </p></li></ul>
+       <img src="Screenshot 2020-01-05 at 1.42.18 AM.png" alt="mushroomactuator" border="4" style="border-color: #242424; width: 35%; height: auto; margin-left: 33%;" class="image image1 image2">
+       <ul><li><p><b>Increasing the speed of the GPs drop rate- </b>With the chained ball, the drop rate of the bean bag dispenser is twice its normal speed for 20 seconds.</p></li></ul>
+       <img src="Screenshot 2020-01-05 at 1.24.49 AM.png" alt="mushroomactuator" border="4" style="border-color: #242424; width: 35%; height: auto; margin-left: 33%;" class="image image1 image2">
+       <ul><li><p><b>Halting the conveyor-</b>When the Twister actuator is activated, the conveyor stops for 10 seconds. When these 10 seconds are up, the conveyor will be going in the opposite direction that it was previously going in. This power-up can only be used after 1 minute has passed since the activation of the Hinge board; it can also only be used once per game.</p></li></ul>
+       <ul><li><p><b>Switching the direction of the conveyor-</b>When the Hinge boards are pressed and activated, the direction of the conveyor will change to the side of the team that pushed it.</p></li></ul>
+      
+       </li></ul>
+   <ul><li><p>Each team during a game is allowed to choose a custom power-up before each heat starts. These will be activated when the Arch actutors are activated. These include:</p>
+          <ul><li><p>The speed of the conveyor belt can be halfed for 20 seconds.</p></li></ul>
+          <ul><li><p>The drop rate of the GPs dispenser will be half its normal speed for 20 seconds.</p></li></ul>
+          <ul><li><p>A black bean bag will be dropped in the middle of the conveyor.</p></li></ul>
+       </li></ul>
+             <ul><li><p>When any conveyor speed changing actuator is activated, any ongoing power-ups that affect the conveyor belt's speed will be terminated. The new power-up now replaces the one that were terminated for its normal duration.</p></li></ul>
+                <ul><li><p>When any drop rate changing actuator is activated, any ongoing power-ups affecting the drop rate will be terminated and replaced by this new one for its normal duration.</p></li></ul>
+   <ul><li><p>The direction of the conveyor can change during the duration of other power-ups as as result of the activation of a Hinged Board or as a result of the normal end of a conveyor period.</p></li></ul>
+                <div class="subtitle3">Actuator:</div>
+                <ul><li><p>During the game, teams must activate actuator to actiate power-ups.</p></li></ul>
+                 <ul><li><p>There are 9 actuators on the playing field. Both teams have 4 actuators specific to their team, and they have one common one:</p>
+                      <ul><li><p>A Hinged Board actuator</p></li></ul>
+                      <ul><li><p>A Chained Ball actuator</p></li></ul>
+                      <ul><li><p>An Arch actuator</p></li></ul>
+                      <ul><li><p>A set of two Mushroom actuators</p></li></ul>
+                      <ul><li><p>And the common one, the Twister actuator</p></li></ul></li></ul>
+                 <ul><li><p>A red LED will be lit up when an actuator is in downtime and not available to use, whereas a green LED will light up when an actuator is still available.</p></li></ul>
+                <ul><li><p>When a team specific actuator is in downtime, the same actuator for the other team is still available to use. But, the twister actuator, being a common actuator, has a single downtime affecting both teams.</p></li></ul>
+<ul><li><p>The hinged actuator can only be activated once per team, but when a team presses the board for the first time to start the conveyor belt, this does not count as their single-use direction switch of the belt. When it has been used by a team, an LED thatr has previously been flashing will turn off.</p></li></ul>
+
+              <div class="subtitle3">Arbitration:</div>
+              <ul><li><p> referees always have the final word.</p></li></ul>
+            
+            <ul><li><p>The referees on the playing field have full authority to judge all aspects of the game, including:</p>
+                
+                            <ul><li><p>preventing robots from negatively blocking other robots;</p></li></ul>
+                            <ul><li><p>preventing robots from damaging the playimg field and game pieces;</p></li></ul>
+                            <ul><li><p>preventing robots from violating the air space on the edges of the field;</p></li></ul>
+            <ul><li><p>try their best to make sure the numbers displayed on the screens are accurate and updated as soon as possible; however, their ruling overrides whaterver is displayed on the screens.</p></li></ul>
+</li></ul>
+                        <ul><li><p>If a robot is said to be dangerous by any of the referees, they run the risk to get disqualified.</p></li></ul>
+            <ul><li><p>Various items may be placed, intentionally or not, on or around the laying field by a robot, on the condition that they are removed from the playing field by the robot before the end of the game. If items are no longer in contact with the robot bu the end, it will be liable to an individual junk penalty of 4% of its total score for the game for each item left on or around the playing field.</p></li></ul>
+                        <ul><li><p>If liquid seeps from a robot to the playing field, the robots total score for the game will be reduced to 0.</p></li></ul>
+            <ul><li><p>The minimum score that a robot may have for any game is 0.</p></li></ul>
+                        <ul><li><p>A robot cannot activate the opposing team's actuators. Whether it was intentional or not, the robot will have a 50% penalty to their total score at the end of the heat.</p></li></ul>
+            <ul><li><p>If a team judges that its robot needs assistance on the playing field during a game, its pilot may ask the referee to assist their robot. If this were to happen, a penalty of 20% of the score will affect only the robot that was assisted. The referees reserve the right not to assist the robot even if asked to do so by the pilot.</p></li></ul>
+            
+                  <div class="subtitle3">Heat Progress:</div>
+            <ul><li><p>Blue robots start the game in the blue starting zones on the playing field, whereas yellow robots start in the yellow starting zone. </p></li></ul></div>
+            
+            <div class="paragraph">
+            <ul><li><p>All games are 5 minutes in duration. When the game time is over, all parts of all robots must stop moving. Game pieces will only be considered when they stop moving, even if this happens after the game time is over. All the points made by a team after the game ends will be canceled.</p></li></ul>
+            <ul><li><p>Team members may not interfere with any items on the field during the game, including contact with the robots and the game pieces.</p></li></ul>
+            
+                        <ul><li><p>All robots must be labelled with the school's name and number as well as its corresponding team colour for the game. These must be visible to the crowd and the referees. If they are not, they won't be able to participate during the game.</p></li></ul>
+            
+            <ul><li><p>If a robot doesn't get out of their starting zone completely, or if it's simply absent during a game, it will be labelled as an inactive robot. When this happens, the inactive robot's teammate will have its score for the game multiplied by 1.25 to compensate with the disadvantage. These inactive robots will also be removed from the field after 30 seconds of inactivity.</p></li></ul>
+            
+            <ul><li><p>If a robot makes it out of its starting zone and then stops moving, it will be considered as a broken robot. If the robot breaks before it meets the sharing requirements, then it will not share the team's points, but its teammate won't have its score multiplied by 1.25.</p></li></ul>
+            
+                        <ul><li><p>After the buzzer which shows that a game is over, the team members are not allowed to enter the playing field, to touch any robot or the game pieces until they are instructed to do so by the head referee.</p></li></ul>
+            
+             <div class="subtitle3">Pilot and co-pilot:</div>
+                        <ul><li><p>Each team's pilot, co-pilot and robot participating in the next round must be in the "on deck area" when the buzzer ends the previous game. If this is not the case, a penalty will be given.</p></li></ul>
+                                    <ul><li><p>If a robot, pilot or co-pilot isn't ready, the round will start without them.</p></li></ul>
+
+                        <ul><li><p>Pilots and co-pilots must stay seated during the entire round in their designated seats, which are placed within the designated areas surrounding the field.</p></li></ul>
+                <ul><li><p>Before the beginning of each heat, the referees will ask each team to choose one of the three custom power-up options. Both teams will not know the other teams choice. Also, this choice is made as a team; it isn't a choice made by each robot. if a team cannot agree on a power-up, a random one will be given to them.</p></li></ul>
+
+            </div></center></fieldset>
+          <script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+               window.onload = function() {
+        document.body.style.backgroundColor = '#FDD8AB';
+    }
+</script>
+        <div class="end"></div>
+                <div style="text-align: right;font-family: cursive;
+            color: black;
+                    margin-bottom:1%; margin-right: 3%;">Inspired by Dr.Seuss' "<i>The Lorax</i>"</div>
+          </body>
+</html>

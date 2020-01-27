@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <style>
+     .header {
+            background-image: url("header nice10.jpg");
+            background-size: 100% 100%;
+            text-align: left;
+            padding: 7%;
+            resize: horizontal;
+            overflow: auto;
+            text-indent: 2%;
+            text-shadow: 3px 2px 2px white;
+            color: #702121;
+            z-index: 1;
+            max-width: 100%;
+        }
+        .header{
+            box-shadow: 0 2.5px 9px white;
+            border-bottom: 0.5px #6d6d6d;
+        }
+             body{
+             background-color: white;
+             margin:auto;
+             Background-size: cover;
+             background-repeat: no-repeat;
+             width:100%;
+             transition: background-color 500ms ease-in;
+
+        }
+       .button{
+            background-color: black;
+            border: none;
+            color: white;
+            padding: -3px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: auto;
+            cursor: pointer;
+            transition-duration: 0.4s;
+            transition-duration: 0.4s;
+            box-shadow: 1px 1px 5px black;
+            position: absolute;
+            right: 10px;
+            top: 1%;
+            width: 5%;
+            height: 6%;
+            border-radius: 20px;
+            display: inline-block;
+            resize: both;
+            font-family: cursive;
+            animation-name: slide;
+            animation-duration: 2s;
+        }
+        @keyframes slide{
+            0%{right: -130px;}
+            50%{right: 50px;}
+            100%{right: 10px;}
+            
+        }
+        .button1{
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            box-shadow: -3px 1px 10px white;
+        }
+        .button:hover{
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+            box-shadow: -3px 1px 10px grey;
+            background-color: #302E30;
+            color: white;
+        }
+        .button span{
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.4s;
+        }
+        .button span: after{
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            transition: 0.4s;
+            color: #FFFFFF;
+            top: 0;
+            right: -20px;
+        }
+        .button: hover span{
+            padding-right: 5%;
+            color: white;
+        }
+        .button: hover span :after{
+            opacity: 0;
+            right: 1;
+            color: white;
+        }
+        .topnav{
+            background-color: black;
+            overflow: hidden;
+            box-shadow: 5px 10px 25px #1D1D1D;
+        }
+        .topnav a{
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            font-family: cursive;
+        }
+        topnav a:hover{
+            background-color: white;
+            color: black;
+        }
+        .topnav a.active{
+            background-color: #FF6D00;
+            color: black;
+            font-weight: bold;
+            font-family: cursive;
+            border-style: solid;
+            border-radius: 10px;
+        }
+.col-1 {width:8.33%}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+      
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+          .title {
+           text-shadow: 2px 3px 2px grey;
+             text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 3px 1px 0 #000;
+           font-family: cursive;
+           font-size: 220%;
+           color: #FC69A8;
+           margin-top: 11%;
+           font-weight:bold;
+                     }
+            .subtitle1 {
+        font-family: cursive;
+        font-size: 170%;
+        margin-top: 4%;
+        Font-weight: bold;
+        color: #FBA737;
+         text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 2px 1px 0 #000;
+        }
+              .subtitle2 { 
+        font-family: cursive;
+        font-size: 170%;
+        margin-top: 4%;
+        Font-weight: bold;
+        color: #FBA737;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 2px 1px 0 #000;
+        }
+          .paragraph {
+            margin-top: 1%;
+            font-family: cursive;
+            font-size: 100%;
+            color: black;
+            max-width: 60%;
+            text-align: justify;
+        }
+        .subtitle3 {   
+        font-family: cursive;
+        font-size: 125%;
+        margin-top: 4%;
+        Font-weight: bold;
+        color: #FBEF37;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 2px 1px 0 #000;
+        }
+        .image{ 
+            box-sizing: border-box;
+        }
+   .image1{    width: 95%;
+            height: auto;
+            margin-top:2%;
+          margin-bottom: 3%;
+       
+       display:block;
+        }
+        .row {
+  display: flex;
+}
+        .column {
+  flex: 100%;
+  padding: auto;
+}         
+        .image2{
+            margin-left: 55%;
+        }
+        .image3{
+            margin-right: 55%;
+        }
+        .end{
+        margin-bottom: 10%;
+        }
+        .start{
+        margin-top: 10%;
+        }
+        .start2{
+        margin-top: 7%;
+        }
+        .down{
+        margin-top: 10%;
+        }
+           .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+        .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+             @media screen and (max-width: 1150px) {
+     
+        }
+                .paragraph {
+            margin-top: 1%;
+            font-family: cursive;
+            font-size: 100%;
+            color: black;
+            max-width: 65%;
+            text-align: justify;
+        }
+                @media screen and (max-width: 925px) {
+        fieldset{
+            background-color:white; width:85%;
+margin-left:14%;
+margin-bottom:5%; 
+border-color:black; 
+border-width: 4px;
+   box-shadow: 0px 4px 10px;
+                    }
+                            .paragraph {
+            margin-top: 1%;
+            font-family: cursive;
+            font-size: 100%;
+            color: black;
+            max-width: 70%;
+            text-align: justify;
+        }
+
+}
+          @media screen and (max-width: 735px) {
+                      fieldset{
+            background-color:white; width:95%;
+margin-left:14%;
+margin-bottom:5%; 
+border-color:black; 
+border-width: 4px;
+   box-shadow: 0px 4px 10px;
+                    }
+                      .paragraph {
+            margin-top: 1%;
+            font-family: cursive;
+            font-size: 100%;
+            color: black;
+            max-width: 75%;
+            text-align: justify;
+        }
+                  .topnav a{
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 13px;
+            font-family: cursive;
+        }
+}
+                @media screen and (max-width: 485px) {
+                            fieldset{
+            background-color:white; width:95%;
+margin-left:10%;
+margin-bottom:5%; 
+border-color:black; 
+border-width: 4px;
+   box-shadow: 0px 4px 10px;
+                    }
+                              .paragraph {
+            margin-top: 1%;
+            font-family: cursive;
+            font-size: 100%;
+            color: black;
+            max-width: 90%;
+            text-align: justify;
+        }
+                      .topnav a{
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 6px;
+            font-family: cursive;
+        }
+
+        }
+            
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LTM Robotics 2020</title>
+ <header class="header" style="font=size: 140%"><b></b></header>
+  </head>
+    <body class="fade">
+<a href="file:///home/chronos/u-592d3ffee1b6e2a08fd84d8acacc5cd6fcf25e8e/MyFiles/Robotics%20Website/Flip.html"><button class="button button1 button2 col-2" style="vertical-allign:middle"><span>English</span>
+      </button></a>
+      <div class="topnav" id="myHeader">
+  <a href="file:///home/chronos/u-592d3ffee1b6e2a08fd84d8acacc5cd6fcf25e8e/MyFiles/Robotics%20Website/Menu.html">Menu</a>
+        <a href="file:///home/chronos/u-592d3ffee1b6e2a08fd84d8acacc5cd6fcf25e8e/MyFiles/Robotics%20Website/Notre_%C3%89cole.html">Notre &Eacute;cole</a>
+        <a class="active" href="file:///home/chronos/u-592d3ffee1b6e2a08fd84d8acacc5cd6fcf25e8e/MyFiles/Robotics%20Website/jeu.html">Le Jeu Flip</a>
+        <a href="file:///home/chronos/u-592d3ffee1b6e2a08fd84d8acacc5cd6fcf25e8e/MyFiles/Robotics%20Website/notre%20robot.html">Notre Robot</a>
+        <a href="file:///home/chronos/u-592d3ffee1b6e2a08fd84d8acacc5cd6fcf25e8e/MyFiles/Robotics%20Website/Équipe.html">Notre &Eacute;quipe</a>
+    </div>
+        <fieldset style="background-color:white; width:70%;
+margin-left:14%;
+margin-bottom:5%; 
+border-color:black; 
+border-width: 4px;box-shadow: 0px 4px 10px;">
+        <div class="start"></div>    <center class="title">Le Jeu Flip</center>
+             <center class="subtitle1">Qu'est-ce que c'est?</center>
+   <center><div class="paragraph">Le jeu Flip est un jeu de robotique CRC. Cette année, il aura lieu au Collège Vanier du 13 au 15 février. </div></center> 
+        <center class="subtitle1">L'objectif</center>
+   <center><div class="paragraph">Pour gagner cette compétition de robotique, une équipe doit avoir accumulé le plus de sacs de sable dans le bac de son équipe.
+</div></center>
+        <div class="start2"></div> <center class="subtitle2">Les r&egrave;glements</center>
+        <center> <div class="paragraph"><div class="subtitle3">Les &Eacute;quipes:</div><ul><li><p>Dans le jeu Flip, deux équipes, une bleue et une jaune, sont sur le terrain de jeu en même temps et s'affrontent.
+ </p></li>
+            <li><p>Chaque équipe aura deux robots d'écoles différentes qui changeront de partie en partie.
+</p></li></ul></div></center>
+        <center> <div class="paragraph"><div class="subtitle3">Le terrain de jeu:</div><ul><li><p>Le terrain de jeu est un rectangle avec un seul niveau.
+            </p></li></ul></div>
+              <div class="column"><img src="Screenshot 2020-01-05 at 1.26.55 AM.png" alt="playingfield" border="4" style="border-color: #242424; width: 35%; height: auto; margin-left: 0;" class="image image1 image2"></div>
+      <div class="paragraph">
+            <ul><li><p>Les zones de départ, deux bleues et deux jaunes, ne sont situées que d'un côté du terrain. Ils sont représentés sous forme de tuiles.
+</p></li></ul>
+            <ul><li><p>Une convoyeur &agrave; chaine est située de l'autre côté du terrain, en face des zones de départ, où les robots ne peuvent pas atteindre.
+                </p></li></ul>
+          <div class="column"><img src="Screenshot 2020-01-05 at 1.19.24 AM.png" alt="conveyor" border="4" style="border-color: #242424; width: 35%; height: auto; margin-left: 33%;" class="image image1 image2"></div>
+            <ul><li><p>Un actionneur Twister est sur le terrain de jeu, où un périmètre peint en rouge l'entoure. Ce périmètre montre où il est possible d'entrer en contact avec l'actionneur; il n'est pas interdit d'entrer dans cette zone, mais c'est aux risques et périls du robot. Si un robot tente délibérément de nuire à un autre robot, il y aura des pénalités.
+</p></li></ul>
+            <div class="column"><img src="Screenshot 2020-01-05 at 1.23.29 AM.png" alt="Twisterfull" border="4" style="border-color: #242424; width: 35%; height: auto; margin-left: 33%;" class="image image1 image2"></div>
+          <ul><li><p>Il existe également des «actionneurs champignons» en dehors du champ rectangulaire. Mais, la zone en dessous est également considérée comme le terrain de jeu.
+</p></li></ul>
+                  <div class="column"><img src="Screenshot 2020-01-05 at 1.20.00 AM.png" alt="mushroomactuator" border="4" style="border-color: #242424; width: 35%; height: auto; margin-left: 33%;" class="image image1 image2"></div>
+            <div class="subtitle3">  Les pi&egrave;ces de jeu:</div><ul><li><p>Les pièces de jeu pour le jeu Flip sont des sachets de sable.
+ </p></li></ul>
+            <ul><li><p>Ces sachets de sable peuvent avoir deux couleurs. Les pièces de jeu rouges, qui sont lâchées pendant le jeu à un certain rythme sur le convoyeur, et les noires, qui sont lâchées pendant le jeu lorsqu'un power-up est activé. Ces sacs noirs valent 30 pts.
+</p></li></ul><ul><li> <p> Il n'y a pas de limites au nombre de GPs mis dans le jeu.
+</p></li></ul>
+            <ul><li><p>Les robots ne peuvent pas toucher les pi&egrave;ces de jeu car ils ne sont pas des pièces de jeu actives.
+</p></li></ul> 
+            </div>
+            <div class="paragraph">
+                <div class="subtitle3">The convoyeur &agrave; chaine:</div>
+                <ul><li><p>La vitesse et la direction du convoyeur sont deux variables indépendantes et elles peuvent prendre des valeurs différentes lorsque différents power-ups sont activés pendant une partie.
+</p></li></ul>
+                <ul><li><p>Deux bacs sont situés à chaque extrémité du convoyeur. L'un d'eux est bleu et l'autre est jaune. Chaque couleur représente les deux équipes.
+</p></li></ul>
+                <ul><li><p>Au début d'une partie, le convoyeur ne bouge pas.
+</p></li></ul>            
+          <ul><li><p>Le convoyeur ne commence à se déplacer que lorsqu'une équipe active son actionneur. L'équipe qui l'activera fera déplacer le convoyeur vers son bac et, par conséquent, y fera tomber des sachets de sable. </p> </li> </ul>
+
+                <ul><li><p>Toutes les 30 secondes, la direction du convoyeur change.
+</p></li></ul>
+                
+            <div class="subtitle3">Mettre en jeu des pièces de jeu:</div>
+            <ul><li><p>Les pièces de jeu sont mises dans le jeu à travers un distributeur au milieu du convoyeur à un certain rythme.
+</p></li></ul>
+                        <ul><li><p>Au début de la partie, un sachets de sable est déposé toutes les 3 secondes.
+</p></li></ul> 
+            </div>
+                   
+            <div class="paragraph">
+             <div class="subtitle3">Marquer des points
+:</div>                          <ul><li><p>Chaque fois qu'un sac tombe dans le bac d'une équipe, des points sont marqués.
+</p>
+              <ul><li> <p>Une pièce de jeu rouge vaut 5 points.
+</p></li></ul>
+ 
+                <ul><li><p>Une pièce de jeu noire vaut 30 points.
+</p></li></ul></li></ul>
+                  
+                  <ul><li><p>Afin de partager des points avec un coéquipier, un robot doit activer au moins un actionneur pendant la partie.
+</p></li></ul>
+                  
+                       <ul><li><p>Le score final de chaque équipe est évalué à la fin du jeu, mais un score estimé peut apparaître à l'écran pendant le jeu.
+</p></li></ul>
+                    </div>
+    
+            <div class="paragraph">
+                <div class="subtitle3">Power-Ups:</div>
+                <ul><li><p>L'activation d'un actionneur activera un power-up spécifique. Chaque actionneur est lié à l'une de ces power-up.
+</p></li></ul>
+   <ul><li><p>Une LED verte s'allume lorsqu'un actionneur est activé.
+</p></li></ul>
+   <ul><li><p>Il existe 4 power-ups liés à des actionneurs spécifiques:
+</p>
+          <ul><li><p><b>Augmenter la vitesse du convoyeur avec les "actionneurs champignons" pendant 20 secondes. - </b> Le plus proche du terrain de jeu l'augmentera d'une fois et demie sa vitesse normale, tandis que le plus éloigné le rendra deux fois plus rapide.
+ </p></li></ul>
+       <img src="Screenshot 2020-01-05 at 1.42.18 AM.png" alt="mushroomactuator" border="4" style="border-color: #242424; width: 35%; height: auto; margin-left: 33%;" class="image image1 image2">
+       <ul><li><p><b>Augmenter la vitesse du taux de chute des GP - </b> Avec la boule enchaînée, le taux de chute du distributeur de sacs de sable est le double de sa vitesse normale pendant 20 secondes.
+</p></li></ul>
+       <img src="Screenshot 2020-01-05 at 1.24.49 AM.png" alt="mushroomactuator" border="4" style="border-color: #242424; width: 35%; height: auto; margin-left: 33%;" class="image image1 image2">
+       <ul><li><p><b>Arrêt du convoyeur- </b> Lorsque l'actionneur Twister est activé, le convoyeur s'arrête pendant 10 secondes. Lorsque ces 10 secondes seront écoulées, le convoyeur se dirigera dans la direction opposée à laquelle il se dirigeait précédemment. Ce power-up ne peut être utilisée qu'après 1 minute après l'activation de la charnière; il ne peut également être utilisé qu'une seule fois par partie.
+</p></li></ul>
+       <ul><li><p><b> Changement de direction du convoyeur- </b> Lorsque les panneaux de charnière sont enfoncés et activés, la direction du convoyeur change du côté de l'équipe qui l'a poussé.
+</p></li></ul>
+      
+       </li></ul>
+   <ul><li><p>Chaque équipe au cours d'une partie est autorisée à choisir un power-up personnalisée avant le début de chaque manche. Ceux-ci seront activés lorsque les actuateurs en arche seront activés. Il s'agit notamment de: </p>
+          <ul><li> <p> La vitesse de la convoyeuse &agrave; chaine peut être réduite de moitié pendant 20 secondes. </p> </li> </ul>
+          <ul><li> <p> Le taux de chute du distributeur GPs sera la moitié de sa vitesse normale pendant 20 secondes. </p> </li> </ul>
+          <ul><li> <p> Un sac de sable noir sera déposé au milieu du convoyeur. </p> </li> </ul>
+       </li></ul>
+             <ul><li><p>Lorsqu'un actionneur de changement de vitesse du convoyeur est activé, tout les power-ups en cours qui affecte la vitesse de la bande transporteuse sera interrompue. LLe nouveau power-up remplace désormais celle qui a été interrompue pour sa durée normale. </p> </li> </ul>
+                <ul><li> <p> Lorsqu'un actionneur qui change le taux de chute est activé, tous les power-ups en cours affectant le taux de chute seront interrompus et remplacés par ce nouveau pour sa durée normale. </p> </li> </ul>
+   <ul><li> <p> La direction du convoyeur peut changer pendant la durée d'autres mises sous tension suite à l'activation d'une planche à charnières ou suite à la fin normale d'une période de convoyeur.</p></li></ul>
+                <div class="subtitle3">Les actionneurs: </div>
+                <ul><li> <p> Pendant le jeu, les équipes doivent activer l'actionneur pour activer les power-ups. </p> </li> </ul>
+                 <ul><li> <p> Il y a 9 actionneurs sur le terrain de jeu. Les deux équipes ont 4 actionneurs spécifiques à leur équipe, et ils en ont un en commun: </p>
+                      <ul><li> <p> Un actionneur de charnière </p> </li> </ul>
+                      <ul><li> <p> Un actionneur à boule enchaînée </p> </li> </ul>
+                      <ul><li> <p> Un actionneur en arche </p> </li> </ul>
+                      <ul><li> <p> Un ensemble de deux actionneurs champignone </p> </li> </ul>
+                      <ul><li> <p> Et le commun, l'actionneur Twister </p> </li> </ul> </li> </ul>
+                 <ul><li> <p> Une LED rouge sera allumée lorsqu'un actionneur est en arrêt et non disponible à utiliser, tandis qu'une LED verte s'allumera lorsqu'un actionneur est toujours disponible. </p> </li> </ul>
+                <ul><li><p>Lorsqu'un actionneur spécifique à une équipe est en arrêt, le même actionneur pour l'autre équipe est toujours disponible. Mais, l'actionneur Twister, étant un actionneur commun, a un seul temps d'arrêt affectant les deux équipes. </p> </li> </ul>
+<ul><li> <p> L'actionneur articulé ne peut être activé qu'une seule fois par équipe, mais lorsqu'une équipe appuie sur l'actuateur pour la première fois pour démarrer le convoyeur &agrave; chaine, cela ne compte pas comme interrupteur de direction à usage unique du convoyeur. Lorsqu'il a été utilisé par une équipe, un LED qui clignotait auparavant s'éteint. </p> </li> </ul>
+
+              <div class="subtitle3">Arbitrage: </div>
+              <ul><li> <p> les arbitres ont toujours le dernier mot. </p> </li> </ul>
+            
+            <ul><li> <p> Les arbitres sur le terrain de jeu ont pleine autorité pour juger tous les aspects du jeu, notamment: </p>
+                
+                            <ul><li> <p> empêcher les robots de bloquer négativement d'autres robots; </p> </li> </ul>
+                            <ul><li> <p> empêcher les robots d'endommager le terrain de jeu et les pièces de jeu; </p> </li> </ul>
+                            <ul><li> <p> empêcher les robots de violer l'espace aérien sur les bords du terrain; </p> </li> </ul>
+            <ul><li><p>faire de leur mieux pour s'assurer que les chiffres affichés sur les écrans sont exacts et mis à jour dès que possible; cependant, leur décision annule tout ce qui est affichée sur les écrans. </p> </li> </ul>
+</li> </ul>
+                        <ul><li> <p> Si un robot est déclaré dangereux par l'un des arbitres, il court le risque d'être disqualifié. </p> </li> </ul>
+            <ul><li> <p> Divers objets peuvent être placés, intentionnellement ou non, sur ou autour du terrain par un robot, à condition qu'ils soient retirés du terrain de jeu par le robot avant la fin de la partie. Si les objets ne sont plus en contact avec le robot à la fin, il sera passible d'une pénalité individuelle indésirable de 4% de son score total pour le jeu pour chaque objet laissé sur ou autour du terrain de jeu. </p> </ li> </ul>
+                        <ul><li> <p> Si du liquide s'infiltre d'un robot vers le terrain de jeu, le score total des robots pour le jeu sera réduit à 0. </p> </li> </ul>
+            <ul><li> <p> Le score minimum qu'un robot peut avoir pour n'importe quel jeu est 0. </p> </li> </ul>
+                        <ul><li><p>Un robot ne peut pas activer les actionneurs de l'équipe adverse. Que ce soit intentionnel ou non, le robot aura une pénalité de 50% sur son score final à la fin de la manche. </p> </li> </ul>
+            <ul><li> <p> Si une équipe juge que son robot a besoin d'aide sur le terrain de jeu pendant un match, son pilote peut demander à l'arbitre d'aider son robot. Si cela devait arriver, une pénalité de 20% du score n'affecterait que le robot qui a été assisté. Les arbitres se réservent le droit de ne pas assister le robot même si le pilote le demande. </p> </li> </ul>
+            
+                  <div class="subtitle3">
+La progression des parties: </div>
+            <ul><li> <p> Les robots bleus commencent le jeu dans les zones de départ bleues sur le terrain de jeu, tandis que les robots jaunes commencent dans la zone de départ jaune. </p></li></ul></div>
+            
+            <div class = "paragraph">
+            <ul><li> <p> Tous les jeux durent 5 minutes. Lorsque le temps de jeu est terminé, toutes les parties de tous les robots doivent cesser de bouger. Les pièces de jeu ne seront prises en compte que lorsqu'elles cesseront de bouger, même si cela se produit après la fin du temps de jeu. Tous les points gagnés par une équipe après la fin du match seront annulés. </p> </li> </ul>
+            <ul><li> <p> Les membres de l'équipe ne doivent pas interférer avec les objets sur le terrain pendant le jeu, y compris le contact avec les robots et les pièces du jeu. </p> </li> </ul>
+            
+                        <ul><li> <p> Tous les robots doivent être étiquetés avec le nom et le numéro de l'école ainsi que la couleur de l'équipe correspondante &agrave; la partie. Ceux-ci doivent être visibles par la foule et les arbitres. S'ils ne le sont pas, ils ne pourront pas participer pendant le jeu. </p> </li> </ul>
+            
+            <ul><li><p>Si un robot ne sort pas complètement de sa zone de départ, ou s'il est simplement absent pendant une partie, il aura le nom d'un robot inactif. Lorsque cela se produit, le coéquipier du robot inactif verra son score multiplié par 1,25 pour compenser l'inconvénient. Ces robots inactifs seront également retirés du terrain après 30 secondes d'inactivité. </p> </li> </ul>
+            
+            <ul><li> <p> Si un robot sort de sa zone de départ puis s'arrête, il sera considéré comme un robot cassé. Si le robot se casse avant qu'il ne réponde aux exigences de partage, il ne partagera pas les points de l'équipe, mais son coéquipier ne verra pas son score multiplié par 1,25. </p> </li> </ul>
+            
+                        <ul><li> <p> Après le buzzer qui indique qu'un match est terminé, les membres de l'équipe ne sont pas autorisés à entrer sur le terrain de jeu, à toucher un robot ou les pièces du jeu jusqu'à ce qu'ils soient invités à le faire par l'arbitre en chef. </p> </li> </ul>
+            
+             <div class = "subtitle3"> Pilote et copilote: </div>
+                        <ul><li> <p> Le pilote, le copilote et le robot de chaque équipe participant &agrave; la partie suivante doivent être dans la "zone de pd&eacute;part" lorsque le buzzer termine la partie précédente. Si ce n'est pas le cas, une pénalité sera infligée. </p> </li> </ul>
+                                    <ul><li><p>Si un robot, pilote ou copilote n'est pas prêt, la manche commencera sans eux. </p> </li> </ul>
+
+                        <ul><li> <p> Les pilotes et copilotes doivent rester assis pendant toute la partie dans leurs sièges désignés, qui sont placés dans les zones désignées entourant le terrain. </p> </li> </ul>
+                <ul><li> <p> Avant le début de chaque manche, les arbitres demanderont à chaque équipe de choisir l'une des trois options de power-ups personnalisées. Les deux équipes ne connaîtront pas le choix des autres équipes. De plus, ce choix se fait en équipe; ce n'est pas un choix fait par chaque robot. Si une équipe ne parvient pas à s'entendre sur un power-up, un choix aléatoire leur sera donnée.</p></li></ul>
+
+            </div></center></fieldset>
+          <script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+               window.onload = function() {
+        document.body.style.backgroundColor = '#FDD8AB';
+    }
+</script>
+        <div class="end"></div>
+        <div style="text-align: right;font-family: cursive;
+            color: black;
+                    margin-bottom:1%; margin-right: 3%;">Inspir&eacute; "<i>Le Lorax</i>" de Dr.Seuss</div>
+          </body>
+</html>

@@ -1,0 +1,922 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <style>
+    .header {
+            background-image: url("header nice10.jpg");
+            background-size: 100% 100%;
+            text-align: left;
+            padding: 7%;
+            resize: horizontal;
+            overflow: auto;
+            text-indent: 2%;
+            text-shadow: 3px 2px 2px white;
+            color: #702121;
+            z-index: 1;
+            max-width: 100%;
+        }
+        .header{
+            box-shadow: 0 2.5px 9px white;
+            border-bottom: 0.5px #6d6d6d;
+        }
+        body{
+               background-color: white;
+             margin:auto;
+             Background-size: cover;
+             background-repeat: no-repeat;
+             width:100%;
+             transition: background-color 500ms ease-in;
+        }
+ .button{
+            background-color: black;
+            border: none;
+            color: white;
+            padding: -3px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: auto;
+            cursor: pointer;
+            transition-duration: 0.4s;
+            transition-duration: 0.4s;
+            box-shadow: 1px 1px 5px black;
+            position: absolute;
+            right: 10px;
+            top: 1%;
+            width: 5%;
+            height: 6%;
+            border-radius: 20px;
+            display: inline-block;
+            resize: both;
+            font-family: cursive;
+            animation-name: slide;
+            animation-duration: 2s;
+        }
+        @keyframes slide{
+            0%{right: -130px;}
+            50%{right: 50px;}
+            100%{right: 10px;}
+            
+        }
+        .button1{
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            box-shadow: -3px 1px 10px white;
+        }
+        .button:hover{
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+            box-shadow: -3px 1px 10px grey;
+            background-color: #302E30;
+            color: white;
+        }
+        .button span{
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.4s;
+        }
+        .button span: after{
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            transition: 0.4s;
+            color: #FFFFFF;
+            top: 0;
+            right: -20px;
+        }
+        .button: hover span{
+            padding-right: 5%;
+            color: white;
+        }
+        .button: hover span :after{
+            opacity: 0;
+            right: 1;
+            color: white;
+        }
+        .topnav{
+           display: block;
+            background-color: black;
+            overflow: hidden;
+            z-index: 500;
+            box-shadow: 5px 10px 25px #1D1D1D;
+        }
+        .topnav a{
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            font-family: cursive;
+        }
+        topnav a:hover{
+            background-color: white;
+            color: black;
+        }
+        .topnav a.active{
+            background-color: #FF6D00;
+            color: black;
+            font-weight: bold;
+            font-family: cursive;
+            border-style: solid;
+            border-radius: 10px;
+        }
+.col-1 {width:8.33%}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+      
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+       .container {
+display: block;
+overflow: hidden;
+  position: absolute;
+  width: 19%; 
+  height: 45%;
+  margin-top: 0;
+  left: 7%;
+        }
+          .containerJ {
+display: block;
+overflow: hidden;
+  position: absolute;
+  width: 19%;
+ height: 45%;
+margin-top: 0;
+              left: 29%
+        }
+            .containerZ {
+display: block;
+overflow: hidden;
+  position: absolute;
+  width: 19%;   height: 45%;
+  margin-top: 0;
+  left: 51%;
+        }
+             .containerC {
+display: block;
+overflow: hidden;
+  position: absolute;
+  width: 19%;   height: 45%;
+  margin-top: 0;
+  left: 73%;
+        }
+            .containerAn {
+display: block;
+overflow: hidden;
+  position: absolute;
+  width: 19%;   height: 45%;
+  margin-top: 22%;
+  left: 7%;
+        }
+              .containerJJ {
+display: block;
+overflow: hidden;
+  position: absolute;
+  width: 19%;   height: 45%;
+  margin-top: 22%;
+  left: 29%;
+        }
+                  .containerCa {
+display: block;
+overflow: hidden;
+  position: absolute;
+  width: 19%;   height: 45%;
+  margin-top: 22%;
+  left: 51%;
+        }
+               .containerJa {
+display: block;
+overflow: hidden;
+  position: absolute;
+  width: 19%;   height: 45%;
+  margin-top: 22%;
+  left: 73%;
+        }
+            .containerZa {
+display: block;
+overflow: hidden;
+  position: absolute;
+  width: 19%;   height: 45%;
+  margin-top: 44%;
+  left: 7%;
+        }
+                    .containerK {
+display: block;
+overflow: hidden;
+  position: absolute;
+  width: 19%;   height: 45%;
+  margin-top: 44%;
+  left: 29%;
+        }
+          .containerI {
+display: block;
+overflow: hidden;
+  position: absolute;
+  width: 19%;   height: 45%;
+  margin-top: 44%;
+  left: 51%;
+        }
+             .containerAd {
+display: block;
+overflow: hidden;
+  position: absolute;
+  width: 19%;   height: 45%;
+  margin-top: 44%;
+  left: 73%;
+        }
+                    .containerD {
+display: block;
+overflow: hidden;
+  position: absolute;
+  width: 19%;   height: 45%;
+  margin-top: 66%;
+  left: 7%;
+    margin-bottom: 8%;
+
+        }
+         .containerM {
+display: block;
+overflow: hidden;
+  position: absolute;
+  width: 19%;   height: 45%;
+  margin-top: 66%;
+  left: 29%;
+    margin-bottom: 8%;
+
+        }
+          .containerT {
+display: block;
+overflow: hidden;
+  position: absolute;
+  width: 19%;        height: 45%;
+  margin-top: 66%;
+  left: 51%;
+    margin-bottom: 8%;
+
+        }
+          .containerP {
+display: block;
+overflow: hidden;
+  position: absolute;
+  width: 19%;
+   height: 45%;
+  margin-top: 66%;
+  left: 73%;
+    margin-bottom: 8%;
+
+        }
+         .containerE {
+display: block;
+overflow: hidden;
+  position: absolute;
+  width: 19%;
+   height: 45%;
+  margin-top: 88%;
+  left: 7%;
+    margin-bottom: 8%;
+
+        }
+             .containerX {
+display: block;
+overflow: hidden;
+  position: absolute;
+  width: 19%;
+   height: 45%;
+  margin-top: 88%;
+  left: 29%;
+    margin-bottom: 8%;
+
+        }
+             .containerL {
+display: block;
+overflow: hidden;
+  position: absolute;
+  width: 19%;
+   height: 45%;
+  margin-top: 88%;
+  left: 51%;
+    margin-bottom: 8%;
+
+        }
+             .containerW {
+display: block;
+overflow: hidden;
+  position: absolute;
+  width: 19%;
+   height: 45%;
+  margin-top: 88%;
+  left: 73%;
+    margin-bottom: 8%;
+
+        }
+               .containermentor1 {
+display: block;
+overflow: hidden;
+  position: absolute;
+  width: 19%;
+   height: 45%;
+  margin-top: 64%;
+  left: 7%;
+    margin-bottom: 8%;
+
+        }       .containermentor2 {
+display: block;
+overflow: hidden;
+  position: absolute;
+  width: 19%;
+   height: 45%;
+  margin-top: 64%;
+  left: 29%;
+    margin-bottom: 8%;
+
+        }       .containermentor3 {
+display: block;
+overflow: hidden;
+  position: absolute;
+  width: 19%;
+   height: 45%;
+  margin-top: 64%;
+  left: 51%;
+    margin-bottom: 8%;
+
+        } 
+.image {
+  display: block;
+  width:97%;
+  height: 97% auto;
+   object-fit: scale;
+    max-width: 120%;
+    border: 3px solid black;
+    border-radius: 30px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 97%;
+  width: 97%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #ffa1fb;
+        border: 3px solid black;
+    border-radius: 30px;
+
+ }
+      
+.container:hover .overlay {
+  opacity: 1;
+}
+        .containerJ:hover .overlay {
+  opacity: 1;
+}
+   .containerZ:hover .overlay {
+  opacity: 1;
+}
+        .containerC:hover .overlay {
+  opacity: 1;
+}
+             .containerAn:hover .overlay {
+  opacity: 1;
+}
+             .containerJJ:hover .overlay {
+  opacity: 1;
+}
+          .containerCa:hover .overlay {
+  opacity: 1;
+}
+        .containerJa:hover .overlay {
+  opacity: 1;
+}
+        .containerZa:hover .overlay {
+  opacity: 1;
+}
+        .containerK:hover .overlay {
+  opacity: 1;
+}
+              .containerI:hover .overlay {
+  opacity: 1;
+}
+                .containerAd:hover .overlay {
+  opacity: 1;
+}
+                    .containerD:hover .overlay {
+  opacity: 1;
+}
+        .containerM:hover .overlay{
+            opacity:1;
+        }
+           .containerT:hover .overlay{
+            opacity:1;
+        }
+           .containerP:hover .overlay{
+            opacity:1;
+        }
+                .containerE:hover .overlay{
+            opacity:1;
+        }
+                .containerX:hover .overlay{
+            opacity:1;
+        }
+                .containerL:hover .overlay{
+            opacity:1;
+        }
+                .containerW:hover .overlay{
+            opacity:1;
+        }
+                  .containermentor1:hover .overlay{
+            opacity:1;
+        }
+                .containermentor2:hover .overlay{
+            opacity:1;
+        }
+                .containermentor3:hover .overlay{
+            opacity:1;
+        }
+.text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+   font-family:cursive;
+}
+.info {
+  color: black;
+  font-size: 2.35vh;
+  position: absolute;
+   top: 52%;
+    left: 44%;
+    margin-left: 5%;
+    margin-right: -30%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+    font-family: cursive;
+}
+        .info2{
+              color: black;
+  font-size: 2.35vh;
+  position: absolute;
+   top: 52%;
+  left: 45%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin-right:-20%;
+  margin-left: 2%;
+    font-family: cursive;
+            margin-top: 7%;
+        
+        }
+          .info3{
+              color: black;
+  font-size: 2.35vh;
+  position: absolute;
+   top: 50%;
+  left: 45%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin-right:-20%;
+  margin-left: 2%;
+    font-family: cursive;
+            margin-top: 8%;
+        
+        }
+         .info4{
+              color: black;
+  font-size: 2.35vh;
+  position: absolute;
+   top: 55%;
+  left: 45%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin-right:-20%;
+  margin-left: 2%;
+    font-family: cursive;
+            margin-top: -5%;
+        }
+        .paragraph {
+             margin-top: 2%;
+            font-family: cursive;
+            font-size: 120%;
+            color: black;
+            max-width: 60%;
+            text-align: justify;  
+        }
+    hr {
+        width:80%; 
+        height:3px; 
+        background: black;
+        margin-top: 2%;
+        margin-bottom:15%;
+        }
+     hr {
+        width:70%; 
+        height: 1.5px; 
+        background: black;
+        margin-top: 5%;
+        margin-bottom:5%;
+        }
+       .title {  
+           text-shadow: 2px 3px 2px grey;
+             text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 3px 1px 0 #000;
+           font-family: cursive;
+           font-size: 200%;
+           color: #FC69A8;
+           margin-top: 10%;
+           font-weight:bold;
+            margin-bottom:4%;
+        }
+          .end{
+        margin-bottom: 5%;
+        }
+             .subtitle{
+                 width: 750px;
+        font-family: cursive;
+        font-size: 190%;
+        margin-top: 9%;
+                 margin-bottom: 1%;
+        Font-weight: bold;
+        color: #FBA737;
+         margin-left: 9%;
+             text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 2px 1px 0 #000;
+        }
+                  .subtitle2{
+        font-family: cursive;
+        font-size: 190%;
+        margin-top: 134%;
+                      margin-bottom: -70%;
+        Font-weight: bold;
+        color: #FBA737;
+        margin-left : 9%;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 2px 1px 0 #000;
+        }
+        .subtitle3{
+        font-family: cursive;
+        font-size: 190%;
+        margin-top: 101%;
+                      margin-bottom: -103%;
+        Font-weight: bold;
+        color: #FBA737;
+        margin-left : 45%;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 2px 1px 0 #000;
+        }
+                           #sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+        }
+           .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+           
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LTM Robotics 2020</title>
+ <header class="header" style="font=size: 140%"><b></b></header>
+  </head>
+    <body class="fade">
+<a href="file:///home/chronos/u-592d3ffee1b6e2a08fd84d8acacc5cd6fcf25e8e/MyFiles/Robotics%20Website/Équipe.html"><button class="button button1 button2 col-2" style="vertical-allign:middle"><span>Fran&ccedil;ais</span>
+      </button></a>
+      <div class="topnav" id="header">
+        <a href="file:///home/chronos/u-592d3ffee1b6e2a08fd84d8acacc5cd6fcf25e8e/MyFiles/Robotics%20Website/home.html">Home</a>
+        <a href="file:///home/chronos/u-592d3ffee1b6e2a08fd84d8acacc5cd6fcf25e8e/MyFiles/Robotics%20Website/Our_School.html">Our School</a>
+        <a href="file:///home/chronos/u-592d3ffee1b6e2a08fd84d8acacc5cd6fcf25e8e/MyFiles/Robotics%20Website/Flip.html">The Flip Game</a>
+        <a href="file:///home/chronos/u-592d3ffee1b6e2a08fd84d8acacc5cd6fcf25e8e/MyFiles/Robotics%20Website/Our_Robot.html">Our Robot</a>
+        <a class="active" href="file:///home/chronos/u-592d3ffee1b6e2a08fd84d8acacc5cd6fcf25e8e/MyFiles/Robotics%20Website/Team.html">Our Team</a></div>
+        <fieldset style="background-color:white; width:90%;
+margin-left: 3.5%;    
+padding-bottom:10%; 
+border-color:black; 
+border-width: 4px;box-shadow: 0px 4px 10px; margin-bottom: 10%;">
+            <center class="title">Our Team</center>
+        <center>  <p class="paragraph">As mentionned before, our robotics club started participating in the CRC competiton in 2011. At that time, there were only three members to the team. But, over the years, this number has grown. It has now reached nineteen members. Every member tries to help with their abilities or abilities that they can learn. We all try our best and do what we can.</p><p class="paragraph">The team is composed of many sub-groups that are responsible for a specific part in the competition. For example, we have a kiosk team, a video team, a website team, and a robot team. But, since we don't have that many members, some people are in more than one sub-group at a time. These are then managed by the co-captains. They help and direct the teammates.</p><p class="paragraph">The CRC competitions are developing  students' knowledge every year. This year, our robotics club has learned many things. But, we mainly learned robot building and programming. Not only this, but we also developped our coding skills. We always look forward to it. We always look forward to learing new things every year, and it is the thing that we enjoy the most. For the Flip game, our team, really enjoyed making our themed kiosk and learning more about robots. Even though it was difficult at times since we lacked knowlege, we still enjoyed it. Also, we often problems with the robot. It is the only aspect from this competition that we really struggled with. But, in order to overcome this, we needed to make sacrifices. We sometimes skipped some classes or came to school on pedagogical days. We also stayed after school more often as the competition approached. When there was a month left, for example, we stayed after school every day of the week.</p></center>
+<hr> 
+            <div class="subtitle">The members...</div>
+        <div class="start"></div>
+   <div class="grid-container"><div class="container">
+             <img src="Screenshot 2020-01-15 at 11.53.29 PM.png" alt="AlexisG." class="image">
+          <div class="overlay">
+              <div class="overlay">
+          <div class="text"><b><h4>Alexis Greig</h4></b></div>
+         <div class="info">
+<p><b style="font-size:20px;">Captain</b></p>            <p><b>Grade:</b> Sec. 5</p>
+            <div><b>Sub-Group:</b> Website, Kiosk and Robot building, journalism, video making</div> 
+                  </div>
+                 </div>                  </div>
+              </div>
+       </div>
+        <div class="containerJ">
+             <img src="Screenshot 2020-01-16 at 12.02.03 AM.png" alt="JulienC." class="image">   
+          <div class="overlay">
+              <div class="overlay">
+          <div class="text"><b><h4>Cassidy Grande</h4></b></div>
+         <div class="info2">
+             <p><b style="font-size:20px;">Captain</b></p>
+            <p style="margin-top:3%;"><b>Grade:</b> Sec. 5</p>
+             <div><b>Sub-Group:</b> Journalism, Video making and Robot building</div>
+        </div>
+        </div>
+        </div>
+        </div>
+                <div class="containerZ">
+             <img src="Screenshot 2020-01-16 at 12.22.54 AM.png" alt="ZachH." class="image">   
+          <div class="overlay">
+              <div class="overlay">
+          <div class="text"><b><h4>Julien Chalifoux</h4></b></div>
+         <div class="info3">
+            <p><b>Grade:</b> Sec. 5</p>
+             <p><b>Sub-Group:</b> Kiosk, Video making and Robot building </p>
+                  </div>
+        </div>
+        </div>
+       </div>
+                     <div class="containerC">
+             <img src="Screenshot 2020-01-16 at 12.27.06 AM.png" alt="CassG." class="image"style="image-rendering: crisp edges;">   
+          <div class="overlay">
+              <div class="overlay">
+          <div class="text"><b><h4>Florencia Saldumbide</h4></b></div>
+         <div class="info4">
+            <p><b>Grade:</b> Sec. 5</p>
+            <div><b>Sub-Group:</b> Robot building and designing, video making</div>
+        </div>
+        </div>
+        </div>
+       </div>
+                  <div class="containerAn">
+             <img src="Screenshot 2020-01-16 at 8.03.30 AM.png" alt="J.J." class="image"style="image-rendering: crisp edges;">   
+          <div class="overlay">
+          <div class="text"><b><h4>Jean-Jacques Bordeleau</h4></b></div>
+         <div class="info3">
+            <p><b>Grade:</b> Sec. 3</p>
+            <div><b>Sub-Group:</b> Robot building, Programming</div>
+        </div>
+        </div>
+        </div>
+                 <div class="containerJJ">
+             <img src="Screenshot 2020-01-16 at 9.59.02 PM.png" alt="Cam" class="image"> 
+          <div class="overlay">
+              <div class="overlay">
+          <div class="text"><b><h4>Cameron Fraser</h4></b></div>
+         <div class="info3">
+            <p><b>Grade:</b> Sec. 3</p>
+            <div><b>Sub-Group:</b> Robot building</div>
+        </div>
+        </div>
+        </div>
+       </div>
+            <div class="containerCa">
+             <img src="Screenshot 2020-01-16 at 10.04.35 PM.png" alt="JacobD." class="image" >   
+          <div class="overlay">
+              <div class="overlay">
+          <div class="text"><b><h4>Jacob Davies</h4></b></div>
+         <div class="info4">
+            <p><b>Grade:</b> Sec. 3</p>
+            <div><b>Sub-Group:</b> Robot contruction, Programming, Video Making</div>
+        </div>
+        </div>
+        </div>
+                </div>
+              <div class="containerJa">
+             <img src="Screenshot 2020-01-16 at 10.08.55 PM.png" alt="ZackU." class="image">   
+          <div class="overlay">
+              <div class="overlay">
+          <div class="text"><b><h4>Zackary Usnick-Mattiuz</h4></b></div>
+         <div class="info3">
+            <p><b>Grade:</b> Sec. 3</p>
+            <div><b>Sub-Group:</b> Robot Construction, Programming</div>
+        </div>
+        </div>
+        </div>
+                </div>
+               <div class="containerZa">
+             <img src="Screenshot 2020-01-16 at 10.13.24 PM.png" alt="ZackU." class="image">  
+          <div class="overlay">
+              <div class="overlay">
+          <div class="text"><b><h4>Anthony Tremblay</h4></b></div>
+         <div class="info3">
+            <p><b>Grade:</b> Sec. 3</p>
+            <div><b>Sub-Group:</b> Robot contruction</div>
+        </div>
+        </div>
+        </div>
+                </div>
+                <div class="containerK">
+              <img src="Screenshot 2020-01-16 at 10.17.44 PM.png" alt="ZackU." class="image">  
+          <div class="overlay">
+              <div class="overlay">
+          <div class="text"><b><h4>Ioannis Pavlopoulos </h4></b></div>
+         <div class="info4">
+            <p><b>Grade:</b> Sec. 2 </p>
+            <div><b>Sub-Group: Robot building</b></div>
+        </div>
+        </div>
+        </div>
+                </div>
+          <div class="containerI">
+             <img src="Screenshot 2020-01-17 at 11.40.18 AM.png" alt="IoannisP." class="image"> 
+          <div class="overlay">
+              <div class="overlay">
+          <div class="text"><b><h4>Amelia Royer</h4></b></div>
+         <div class="info4">
+            <p><b>Grade:</b> Sec. 1</p>
+            <div><b>Sub-Group: Kiosk Building</b></div>
+        </div>
+        </div>
+        </div>
+                </div>
+                  <div class="containerAd"><img src="Screenshot 2020-01-17 at 1.50.07 PM.png" alt="AdamC." class="image">  
+          <div class="overlay">
+              <div class="overlay">
+          <div class="text"><b><h4>Amelia Currie</h4></b></div>
+         <div class="info4">
+            <p><b>Grade:</b> Sec. 1</p>
+            <div><b>Sub-Group: Kiosk building</b></div>
+        </div>
+        </div>
+        </div>
+                </div>
+                                         <div class="containerD"><img src="Screenshot 2020-01-20 at 7.59.12 PM.png" alt="DylanT." class="image">  
+          <div class="overlay">
+              <div class="overlay">
+          <div class="text"><b><h4>Ava Baker</h4></b></div>
+         <div class="info4">
+            <p><b>Grade:</b> Sec. 1</p>
+            <div><b>Sub-Group: Kiosk building</b></div>
+        </div>
+        </div>
+        </div>
+                </div>
+            <div class="containerM"><img src="Screenshot 2020-01-17 at 6.25.36 PM.png" alt="marlon." class="image">  
+          <div class="overlay">
+              <div class="overlay">
+          <div class="text"><b><h4>Sereen Kouzayha</h4></b></div>
+         <div class="info4">
+            <p><b>Grade:</b> Sec. 1</p>
+            <div><b>Sub-Group: Kiosk building</b></div>
+        </div>
+        </div>
+        </div>
+                </div>
+                   <div class="containerT"><img src="Screenshot 2020-01-20 at 7.57.54 PM.png" alt="Mr.T." class="image"> 
+          <div class="overlay">
+              <div class="overlay">
+          <div class="text"><b><h4>Nethmi Sigirige</h4></b></div>
+         <div class="info4">
+            <p><b>Grade:</b> Sec. 1 </p>
+            <div><b>Sub-Group: Kiosk building</b></div>
+        </div>
+        </div>
+        </div>
+                </div>
+                   <div class="containerP"><img src="Screenshot 2020-01-20 at 8.01.54 PM.png" alt="Mrs.P." class="image">  
+          <div class="overlay">
+              <div class="overlay">
+          <div class="text"><b><h4>Nelith Sigirige</h4></b></div>
+         <div class="info4">
+             <p><b>Grade:</b> Sec. 1</p>
+            <div><b>Sub-Group: Kiosk Building</b></div>
+        </div>
+        </div>
+        </div>
+            </div>
+                <div class="containerE"><img src="Screenshot 2020-01-17 at 6.30.56 PM.png" alt="Mr.T." class="image">  
+          <div class="overlay">
+              <div class="overlay">
+          <div class="text"><b><h4>Tanner Morrison</h4></b></div>
+         <div class="info4">
+            <p><b>Grade:</b> Sec. 1 </p>
+            <div><b>Sub-Group: Robot Building </b></div>
+        </div>
+        </div>
+        </div>
+                </div>
+                     <div class="containerX"><img src="Screenshot 2020-01-20 at 8.03.28 PM.png" alt="Mr.T." class="image"> 
+          <div class="overlay">
+              <div class="overlay">
+          <div class="text"><b><h4>Caterina Arena-Saia</h4></b></div>
+         <div class="info4">
+           <p><b>Ann&eacute;e:</b> Sec. 1</p>
+            <div><b>Sous-Group: Construction du kiosque</b></div>
+        </div>
+        </div>
+        </div>
+                </div>
+                    <div class="containerL"><img src="Screenshot 2020-01-17 at 6.35.09 PM.png" alt="Mr.T." class="image"> 
+          <div class="overlay">
+              <div class="overlay">
+          <div class="text"><b><h4>Alessio Ivancic</h4></b></div>
+         <div class="info4">
+           <p><b>Grade:</b> Sec. 1</p>
+            <div><b>Sub-Group: Robot Building</b></div>
+        </div>
+        </div>
+        </div>
+                </div>
+            <div class="subtitle2">The mentors...</div>
+              <div class="containermentor1"><img src="Screenshot 2020-01-17 at 2.11.32 PM.png" alt="Mr.T." class="image">
+          <div class="overlay">
+              <div class="overlay">
+          <div class="text"><b><h4>Gordon Truesdale</h4></b></div>
+         <div class="info4">
+             <div><b>Mentor/</b></div>
+            <div><b>Science Teacher</b></div>
+        </div>
+        </div>
+        </div>
+                </div>  <div class="containermentor2"><img src="Screenshot 2020-01-17 at 2.02.33 PM.png" alt="Mr.T." class="image">
+          <div class="overlay">
+              <div class="overlay">
+          <div class="text"><b><h4>Kevin Judd</h4></b></div>
+         <div class="info4">
+             <div><b>Mentor/</b></div>
+            <div><b>Math Teacher</b></div>
+        </div>
+        </div>
+        </div>
+                </div>  <div class="containermentor3"><img src="Screenshot 2020-01-20 at 7.58.39 PM.png" alt="Mr.T." class="image">
+          <div class="overlay">
+              <div class="overlay">
+          <div class="text"><b><h4>Ralph Di Lorio</h4></b></div>
+         <div class="info4">
+             <div><b>Mentor/</b></div>
+            <div><b>Lab Tech</b></div>
+        </div>
+        </div>
+        </div>
+                </div>
+            <div class="subtitle3"><u>Highlights</u></div>
+            <video  style="
+            margin-top: 105%;                                               
+          display:block;margin-left: 26%; box-shadow: -2px 9px 10px black; border-radius: 9px;" width="50%" height="auto" controls src="website.m4v"> Your browser does not support the video tag.
+                </video>
+              </fieldset>
+                <script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("header");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+   window.onload = function() { document.body.style.backgroundColor = '#FDD8AB';
+    }
+</script>
+        <div style="text-align: right;font-family: cursive;
+            color: black;
+                    margin-bottom:1%; margin-right: 3%;">Inspired by Dr.Seuss' "<i>The Lorax</i>"</div>
+
+             </body>
+</html>

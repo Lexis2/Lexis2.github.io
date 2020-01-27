@@ -3,103 +3,125 @@
   <head>
     <style>
        .header {
-        background-image: url("header nice11.jpg");
-           background-size: 100% 100%;
-        text-align: left;
-        padding: 7%;
-        resize: horizontal;
-        overflow:auto;
-        text-indent: 2%;
-        text-shadow: 3px 2px 2px white;
-        color: #702121;
-        z-index: 1;
-        max-width: 100%;
-      }
-      .header{
-  box-shadow: 0 2.5px 9px #3d3d3d;
-  border-bottom: 0.5px #6d6d6d;
-}
-body{
-  background-color: #e0e1e2;
-  margin: auto;
-}
-.button{
-  background-color: grey;
-  border:none;
-  color: #dcdde2;
-  padding: 0;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: auto;
-  cursor: pointer;
-  transition-duration: 0.4s;
-  transition-duration: 0.4s;
-  box-shadow: 10px 10px 15px grey;
-  position: absolute;
-  right: 10px;
-  top: 1%;
-  width: 15%;
-  height: 6%;
-  border-radius: 3px;
-  display: inline-block;
-  resize: both;
-}
-.button1 {
-   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-  box-shadow: -3px 1px 10px white;
-}
-.button2:hover {
-   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-  box-shadow: -3px 1px 10px grey;
-  background-color: #545659;
-  color: white;
-}
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.4s;
-}
-.button span: after{
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  transition: 0.4s;
-  color: #FFFFFF;
-  top: 0;
-  right: -20px;
-}
-.button: hover span {
-   padding-right: 5%;
-  color: white;
-}
-.button: hover span: after{
-  opacity: 0;
-  right: 1;
-  color: white; 
-}
-.topnav {
-    background-color: #333;
-    overflow: hidden;
-}
-.topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
-}
-.topnav a.active {
-    background-color: #702121;
-    color: white;
-}
+            background-image: url("header nice10.jpg");
+            background-size: 100% 100%;
+            text-align: left;
+            padding: 7%;
+            resize: horizontal;
+            overflow: auto;
+            text-indent: 2%;
+            text-shadow: 3px 2px 2px white;
+            color: #702121;
+            z-index: 1;
+            max-width: 100%;
+        }
+        .header{
+            box-shadow: 0 2.5px 9px white;
+            border-bottom: 0.5px #6d6d6d;
+        }
+        body{
+             background-color: white;
+             margin:auto;
+             Background-size: cover;
+             background-repeat: no-repeat;
+             width:100%;
+             transition: background-color 500ms ease-in;
+
+        }
+ .button{
+            background-color: black;
+            border: none;
+            color: white;
+            padding: -3px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: auto;
+            cursor: pointer;
+            transition-duration: 0.4s;
+            transition-duration: 0.4s;
+            box-shadow: 1px 1px 5px black;
+            position: absolute;
+            right: 10px;
+            top: 1%;
+            width: 5%;
+            height: 6%;
+            border-radius: 20px;
+            display: inline-block;
+            resize: both;
+            font-family: cursive;
+            animation-name: slide;
+            animation-duration: 2s;
+        }
+        @keyframes slide{
+            0%{right: -130px;}
+            50%{right: 50px;}
+            100%{right: 10px;}
+            
+        }
+        .button1{
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            box-shadow: -3px 1px 10px white;
+        }
+        .button:hover{
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+            box-shadow: -3px 1px 10px grey;
+            background-color: #302E30;
+            color: white;
+        }
+        .button span{
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.4s;
+        }
+        .button span: after{
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            transition: 0.4s;
+            color: #FFFFFF;
+            top: 0;
+            right: -20px;
+        }
+        .button: hover span{
+            padding-right: 5%;
+            color: white;
+        }
+        .button: hover span :after{
+            opacity: 0;
+            right: 1;
+            color: white;
+        }
+        .topnav{
+             display: block;
+            background-color: black;
+            overflow: hidden;
+            z-index: 500;
+            box-shadow: 5px 10px 25px #1D1D1D;
+        }
+        .topnav a{
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            font-family: cursive;
+        }
+        topnav a:hover{
+            background-color: white;
+            color: black;
+        }
+        .topnav a.active{
+            background-color: #FF6D00;
+            color: black;
+            font-weight: bold;
+            font-family: cursive;
+            border-style: solid;
+            border-radius: 10px;
+        }
 .col-1 {width:8.33%}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -126,43 +148,137 @@ body{
     .col-s-11 {width: 91.66%;}
     .col-s-12 {width: 100%;}
        .title {
-            color: #8C2222;
-            text-shadow: 2px 3px 2px grey;
-            font-family: Arial Black, Gadget, sans-serif;
-            font-size: 160%;
-            margin-top: 6%;
+              text-shadow: 2px 3px 2px grey;
+             text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 3px 1px 0 #000;
+           font-family: cursive;
+           font-size: 220%;
+           color: #FC69A8;
+           margin-top: 10%;
+           font-weight:bold;
+            margin-bottom:4%;
         }
                   .paragraph {
-            font-family: Verdana, Gadget, serif;
-            font-size: 100%;
+            font-family: cursive;
+            font-size: 120%;
             color: black;
             max-width: 60%;
             text-align: justify;
             margin-top: 2%;
         }
+         .paragraph2 {
+            font-family: cursive;
+            font-size: 120%;
+            color: black;
+            max-width: 60%;
+            text-align: justify;
+            margin-top: 2%;
+             margin-bottom: 15%;
+        }
+          .subtitle{
+        font-family: cursive;
+        font-size: 140%;
+        margin-top: 5%;
+        Font-weight: bold;
+        color: #FBA737;
+         margin-left: 12%;
+             text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 2px 1px 0 #000;
+        }
+            .subtitle2{
+        font-family: cursive;
+        font-size: 140%;
+        margin-top: 15%;
+        Font-weight: bold;
+        color: #FBA737;
+         margin-left: 12%;
+             text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 2px 1px 0 #000;
+        }
         .end{margin-bottom: 5%;}
+           .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+         .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
     </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>LTM Robotics 2018.19</title>
+    <title>LTM Robotics 2020</title>
  <header class="header" style="font=size: 140%"><b></b></header>
   </head>
-    <body>
-<a href="Notre_Robot.html"><button class="button button1 button2 col-2" style="vertical-allign:middle"><span>Fran&ccedil;ais</span>
+    <body class="fade">
+<a href="file:///home/chronos/u-592d3ffee1b6e2a08fd84d8acacc5cd6fcf25e8e/MyFiles/Robotics%20Website/notre%20robot.html"><button class="button button1 button2 col-2" style="vertical-allign:middle"><span>Fran&ccedil;ais</span>
       </button></a>
-      <div class="topnav">
-        <a href="index.html">Home</a>
-          <a href="Our_School.html">Our School</a>
-        <a href="The_Game.html">The Vertigoal Game</a>
-        <a class="active" href="Our_Robot.html">Our Robot</a>
-        <a href="Our_Team (1).html">Our Team</a>
-      </div>
+      <div class="topnav" id="myHeader">
+        <a href="file:///home/chronos/u-592d3ffee1b6e2a08fd84d8acacc5cd6fcf25e8e/MyFiles/Robotics%20Website/home.html">Home</a>
+        <a href="file:///home/chronos/u-592d3ffee1b6e2a08fd84d8acacc5cd6fcf25e8e/MyFiles/Robotics%20Website/Our_School.html">Our School</a>
+        <a href="file:///home/chronos/u-592d3ffee1b6e2a08fd84d8acacc5cd6fcf25e8e/MyFiles/Robotics%20Website/Flip.html">The Flip Game</a>
+        <a class="active" href="file:///home/chronos/u-592d3ffee1b6e2a08fd84d8acacc5cd6fcf25e8e/MyFiles/Robotics%20Website/Our_Robot.html">Our Robot</a>
+        <a href="file:///home/chronos/u-592d3ffee1b6e2a08fd84d8acacc5cd6fcf25e8e/MyFiles/Robotics%20Website/Team.html">Our Team</a></div>
+        <fieldset style="background-color:white; width:70%;
+margin-left:14%;
+margin-bottom:5%; 
+border-color:black; 
+border-width: 4px;box-shadow: 0px 4px 10px;">
           <center class="title">Our Robot</center>
-        <center><div class="paragraph">When we first found out what the game would be this year, we did a lot of brainstorming. We originally had the idea of making a tennis ball launcher, but as time passed we had the idea of making a spring mechanism in order to catapult the game pieces in the targets. We thought this was a better idea. Suggestions and designs would be tossed around for a while until we had a brief idea of what we would build. 
-            <p>For the Vertigoal game, our robot will be made out of a baby stroller for the frame and hockey sticks, which will be used to make the structure and the launcher. We started by getting the excess pieces of of the stroller, such as the seat. Then we devided ourselves in sub-groups to make different components for the robot. These counted the color sensors, the frame, the catapult and many more. </p>
+            <div class="subtitle">The Brainstorming...</div>
+        <center><div class="paragraph">When we first found out what the game would be this year, we did a lot of brainstorming. We first thought of giving the robot an arm that could rotate and translate. It could be used for the arch and the actuators during the game. But, we soon changed our idea. We then thought about having an arm that could only rotate. Having this will make it simpler. And, instead of making the arm translate, we thought of having some sort of object at the front and at the back of the robotthat could allow us to push the actuators. <p>This being said, we were thinking of a robot that small, that had an arm, and an object to push the actuators. The next question that needed to be answered was, "how can we make the robot easier to control?" Our first answer was to give the robot mecanum wheels. But after more thinking, we also thought that it would be ineteresting to giver the robot the ability to change its "front side". This way, depending on which color our team is andf depending on where we are on the playing field, it will be easy for us to control.</p> </div></center>
+          <img src="Screenshot 2020-01-05 at 1.42.57 AM.png" alt="brainstorm" border="4" style="border-color: #242424; width: 27%; height: auto; margin-top:6%; potiton: relative;
+          margin-bottom: 5%;
+          display:block;
+          margin-left: 17%; box-shadow: -2px 9px 10px black; border-radius: 9px;">
             
-            <p>Through our process, the worst problem we have faced was time. It took a long time to create stability within the robot, and the wiring took longer than expected which might end up causing problems as well in the future. Even though these problems were encountered, we have found ways to overcome them. When it came to the stability, we found the idea of using hockey sticks whithin the robot, which would be lighter than wood and would be just as effective. For the shortage of time, we have found many ways to pass this problem. For one, we would go to school during a pedagogical day, or we would try to stay at school as long as we could.</p>
+            <img src="Screenshot 2020-01-05 at 11.50.09 AM.png" alt="brainstorm" border="4" style="border-color: #242424; width: 35%; height: auto; margin-top:-27%; potiton: relative;
+          margin-bottom: 5%;
+          display:block;
+          margin-left: 50%; box-shadow: -2px 9px 10px black; border-radius: 9px;">
+            <div class="subtitle2"> The Robot's Design...</div>
+            <center><div class="paragraph2">For the Flip Game, our robot will be made of wood and metal. Last year, as we used a baby stroller for the base, we saw that making our own base would be simpler. So, we will have a rectangular base made of wood with metal frames. <p>The mecanum wheels will be placed within the base, instead of underneath. When it comes to the arm, it will be connected to a wheel that can be controlled because of a motor. This way, we can make it rotate in a simpler way.</p><p>In order to activate the actuators, we will place a ball-like object at the front and at the back of the robot. This object will most-likely be a small tenis ball.</p> </div></center>
+              <img src="Screenshot 2020-01-20 at 8.40.20 PM.png" alt="brainstorm" border="4" style="border-color: #242424; width: 23%; height: auto; margin-top:-10%; potiton: relative;
+          margin-bottom: 5%;
+          display:block;
+          margin-left: 36%; box-shadow: -2px 9px 10px black; border-radius: 9px;">
+              <div class="subtitle">Problems Encountered...</div><center><div class="paragraph">During our robot building, there were many problems encountered. Since, for many of us, it's our first time to really make a robot, we had a lot of difficulties. <p> One of these was with the wheels and the motors. We had trouble making axles for the wheels that fit both the wheel's hub and the motors at the same time. But, because of this, we ended up buying different metal rods and hubs. After doing this, our task got a lot easier to do.</p><p>Another problem we had was with the motors. At first, we were using motors with a ratio of 256:1, but we soon realized that these were too slow for this year's competition. So, we searched in our materials and found motors that had a 64:1 ratio. This was a lot better, but our difficulties weren't over. The inside of the gearboxes weren't the same. So, the metal rods that we shaved to fit in our previous piece didn't fit anymore. Because of this, we decided to use the 256:1 motors pieces in order to modify the 64:1 motors.</p><p>Lastly, the main problem we encountered was with the arm. Even to this day, we still don't have a clear idea of how to make it or how to make it work. This is still a question we need to answer... </p>
             </div></center>
+             <img src="Screenshot 2020-01-07 at 7.34.36 AM.png" alt="brainstorm" border="4" style="border-color: #242424; width: 23%; height: auto; margin-top:5%; potiton: relative;
+          margin-bottom: 5%;
+          display:block;
+          margin-left: 36%; box-shadow: -2px 9px 10px black; border-radius: 9px;">
+            </fieldset>
+          <script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+   window.onload = function() {
+        document.body.style.backgroundColor = '#FDD8AB';
+    }
+</script>
         <div class="end"></div>
+                <div style="text-align: right;font-family: cursive;
+            color: black;
+                    margin-bottom:1%; margin-right: 3%;">Inspired by Dr.Seuss' "<i>The Lorax</i>"</div>
           </body>
 </html>

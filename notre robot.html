@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <style>
+       .header {
+            background-image: url("header nice10.jpg");
+            background-size: 100% 100%;
+            text-align: left;
+            padding: 7%;
+            resize: horizontal;
+            overflow: auto;
+            text-indent: 2%;
+            text-shadow: 3px 2px 2px white;
+            color: #702121;
+            z-index: 1;
+            max-width: 100%;
+        }
+        .header{
+            box-shadow: 0 2.5px 9px white;
+            border-bottom: 0.5px #6d6d6d;
+        }
+        body{
+             background-color: white;
+             margin:auto;
+             Background-size: cover;
+             background-repeat: no-repeat;
+             width:100%;
+             transition: background-color 500ms ease-in;
+
+        }
+ .button{
+            background-color: black;
+            border: none;
+            color: white;
+            padding: -3px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: auto;
+            cursor: pointer;
+            transition-duration: 0.4s;
+            transition-duration: 0.4s;
+            box-shadow: 1px 1px 5px black;
+            position: absolute;
+            right: 10px;
+            top: 1%;
+            width: 5%;
+            height: 6%;
+            border-radius: 20px;
+            display: inline-block;
+            resize: both;
+            font-family: cursive;
+            animation-name: slide;
+            animation-duration: 2s;
+        }
+        @keyframes slide{
+            0%{right: -130px;}
+            50%{right: 50px;}
+            100%{right: 10px;}
+            
+        }
+        .button1{
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            box-shadow: -3px 1px 10px white;
+        }
+        .button:hover{
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+            box-shadow: -3px 1px 10px grey;
+            background-color: #302E30;
+            color: white;
+        }
+        .button span{
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.4s;
+        }
+        .button span: after{
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            transition: 0.4s;
+            color: #FFFFFF;
+            top: 0;
+            right: -20px;
+        }
+        .button: hover span{
+            padding-right: 5%;
+            color: white;
+        }
+        .button: hover span :after{
+            opacity: 0;
+            right: 1;
+            color: white;
+        }
+        .topnav{
+             display: block;
+            background-color: black;
+            overflow: hidden;
+            z-index: 500;
+            box-shadow: 5px 10px 25px #1D1D1D;
+        }
+        .topnav a{
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            font-family: cursive;
+        }
+        topnav a:hover{
+            background-color: white;
+            color: black;
+        }
+        .topnav a.active{
+            background-color: #FF6D00;
+            color: black;
+            font-weight: bold;
+            font-family: cursive;
+            border-style: solid;
+            border-radius: 10px;
+        }
+.col-1 {width:8.33%}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+      
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+       .title {
+              text-shadow: 2px 3px 2px grey;
+             text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 3px 1px 0 #000;
+           font-family: cursive;
+           font-size: 220%;
+           color: #FC69A8;
+           margin-top: 10%;
+           font-weight:bold;
+            margin-bottom:4%;
+        }
+                  .paragraph {
+            font-family: cursive;
+            font-size: 120%;
+            color: black;
+            max-width: 60%;
+            text-align: justify;
+            margin-top: 2%;
+        }
+         .paragraph2 {
+            font-family: cursive;
+            font-size: 120%;
+            color: black;
+            max-width: 60%;
+            text-align: justify;
+            margin-top: 2%;
+             margin-bottom: 15%;
+        }
+          .subtitle{
+        font-family: cursive;
+        font-size: 140%;
+        margin-top: 5%;
+        Font-weight: bold;
+        color: #FBA737;
+         margin-left: 12%;
+             text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 2px 1px 0 #000;
+        }
+            .subtitle2{
+        font-family: cursive;
+        font-size: 140%;
+        margin-top: 15%;
+        Font-weight: bold;
+        color: #FBA737;
+         margin-left: 12%;
+             text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 2px 1px 0 #000;
+        }
+        .end{margin-bottom: 5%;}
+           .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+         .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LTM Robotics 2020</title>
+ <header class="header" style="font=size: 140%"><b></b></header>
+  </head>
+    <body class="fade">
+<a href="file:///home/chronos/u-592d3ffee1b6e2a08fd84d8acacc5cd6fcf25e8e/MyFiles/Robotics%20Website/Our_Robot.html"><button class="button button1 button2 col-2" style="vertical-allign:middle"><span>English</span>
+      </button></a>
+      <div class="topnav" id="myHeader">
+       <a href="file:///home/chronos/u-592d3ffee1b6e2a08fd84d8acacc5cd6fcf25e8e/MyFiles/Robotics%20Website/Menu.html">Menu</a>
+        <a href="file:///home/chronos/u-592d3ffee1b6e2a08fd84d8acacc5cd6fcf25e8e/MyFiles/Robotics%20Website/Notre_%C3%89cole.html">Notre &Eacute;cole</a>
+        <a href="file:///home/chronos/u-592d3ffee1b6e2a08fd84d8acacc5cd6fcf25e8e/MyFiles/Robotics%20Website/jeu.html">Le Jeu Flip</a>
+        <a class="active" href="file:///home/chronos/u-592d3ffee1b6e2a08fd84d8acacc5cd6fcf25e8e/MyFiles/Robotics%20Website/notre%20robot.html">Notre Robot</a>
+        <a href="file:///home/chronos/u-592d3ffee1b6e2a08fd84d8acacc5cd6fcf25e8e/MyFiles/Robotics%20Website/Équipe.html">Notre &Eacute;quipe</a>
+    </div>
+     <fieldset style="background-color:white; width:70%;
+margin-left:14%;
+margin-bottom:5%; 
+border-color:black; 
+border-width: 4px;box-shadow: 0px 4px 10px;">
+          <center class="title">Notre Robot</center>
+            <div class="subtitle">La r&eacute;flexion...</div>
+        <center><div class="paragraph"> Lorsque nous avons découvert pour la première fois le jeu cette année, nous avons fait beaucoup de r&eacute;flexion. Nous avons d'abord pensé à doter le robot d'un bras pouvant tourner et se translater. Il pourrait être utilisé pour l'arche et les actionneurs pendant le match. Mais, nous avons rapidement changé notre idée. Nous avons alors pensé à avoir un bras qui ne pouvait que tourner. Avoir cela le rendra plus simple. Et, au lieu de faire translater le bras, nous avons pensé avoir une sorte d'objet à l'avant et à l'arrière du robot qui pourrait nous permettre de pousser les actionneurs. <p> Cela étant dit, nous pensions à un robot qui &eacute;tait petit, qui avait un bras et un objet pour pousser les actionneurs. La question suivante à laquelle il fallait répondre était: "comment pouvons-nous rendre le robot plus facile à contrôler?" Notre première réponse a été de donner au robot des roues m&eacute;canum. Mais après plus de réflexion, nous avons également pensé qu'il serait inintéressant de donner au robot la possibilité de changer sa "face avant". De cette façon, selon la couleur de notre équipe et selon l'endroit où nous nous trouvons sur le terrain de jeu, il nous sera facile de le contrôler.
+</p> </div></center>
+          <img src="Screenshot 2020-01-05 at 1.42.57 AM.png" alt="brainstorm" border="4" style="border-color: #242424; width: 27%; height: auto; margin-top:6%; potiton: relative;
+          margin-bottom: 5%;
+          display:block;
+          margin-left: 17%; box-shadow: -2px 9px 10px black; border-radius: 9px;">
+            
+            <img src="Screenshot 2020-01-05 at 11.50.09 AM.png" alt="brainstorm" border="4" style="border-color: #242424; width: 35%; height: auto; margin-top:-27%; potiton: relative;
+          margin-bottom: 5%;
+          display:block;
+          margin-left: 50%; box-shadow: -2px 9px 10px black; border-radius: 9px;">
+            <div class="subtitle2"> La conception du robot
+...</div>
+            <center><div class="paragraph2">Pour le jeu Flip, notre robot sera en bois et en métal. L'année dernière, alors que nous utilisions une poussette pour la base, nous avons vu que fabriquer notre propre base serait plus simple. Ainsi, nous aurons une base rectangulaire en bois avec des cadres métalliques. <p> Les roues mécanum seront placées à l'intérieur de la base, au lieu d'en dessous. En ce qui concerne le bras, il sera connecté à une roue qui peut être contrôlée grâce à un moteur. De cette façon, nous pouvons le faire tourner d'une manière plus simple. </p> <p> Afin d'activer les actionneurs, nous placerons un objet semblable à une balle à l'avant et à l'arrière du robot. Cet objet sera très probablement une petite balle de tenis.
+</p> </div></center>
+              <img src="Screenshot 2020-01-20 at 8.40.20 PM.png" alt="brainstorm" border="4" style="border-color: #242424; width: 23%; height: auto; margin-top:-10%; potiton: relative;
+          margin-bottom: 5%;
+          display:block;
+          margin-left: 36%; box-shadow: -2px 9px 10px black; border-radius: 9px;">
+         <div class = "subtitle"> Des problèmes rencontrés ... </div> <center> <div class = "paragraph"> Lors de la construction de notre robot, de nombreux problèmes ont été rencontrés. Puisque, pour beaucoup d'entre nous, c'est la première fois que nous faisons vraiment un robot, nous avons eu beaucoup de difficultés. <p> L'un d'eux concernait les roues et les moteurs. Nous avons eu du mal à fabriquer des essieux pour les roues qui correspondent à la fois au moyeu de la roue et aux moteurs en même temps. Mais, à cause de cela, nous avons fini par acheter différentes poteaux et moyeux métalliques. Après cela, notre tâche est devenue beaucoup plus facile à faire. </p> <p> Un autre problème que nous avions eu était avec les moteurs. Au début, nous utilisions des moteurs avec un rapport de 256: 1, mais nous nous sommes vite rendu compte qu'ils étaient trop lents pour la compétition de cette année. Nous avons donc cherché dans nos matériaux et trouvé des moteurs qui avaient un rapport de 64: 1. C'était beaucoup mieux, mais nos difficultés n'étaient pas terminées. L'intérieur des boîtes de vitesses n'était pas le même. Ainsi, les tiges métalliques que nous avons rasées pour notre pièce précédente ne fonctionnaient plus. Pour cette raison, nous avons décidé d'utiliser les pièces de moteurs 256:1 afin de modifier les moteurs 64:1. </p> <p> Enfin, le principal problème que nous avons rencontré était avec le bras. Même à ce jour, nous n'avons toujours pas une idée claire de comment le faire ou comment le faire fonctionner. C'est encore une question à laquelle nous devons répondre ... </p>
+            </div> </center>
+         <img src="Screenshot 2020-01-07 at 7.34.36 AM.png" alt="brainstorm" border="4" style="border-color: #242424; width: 23%; height: auto; margin-top:5%; potiton: relative;
+          margin-bottom: 5%;
+          display:block;
+          margin-left: 36%; box-shadow: -2px 9px 10px black; border-radius: 9px;">
+
+            </fieldset>
+          <script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+   window.onload = function() {
+        document.body.style.backgroundColor = '#FDD8AB';
+    }
+</script>
+        <div class="end"></div>
+        <div style="text-align: right;font-family: cursive;
+            color: black;
+                    margin-bottom:1%; margin-right: 3%;">Inspir&eacute; "<i>Le Lorax</i>" de Dr.Seuss</div>
+          </body>
+</html>

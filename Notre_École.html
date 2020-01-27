@@ -1,105 +1,126 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <style>
-       .header {
-        background-image: url("header nice11.jpg");
-           background-size: 100% 100%;
-        text-align: left;
-        padding: 7%;
-        resize: horizontal;
-        overflow:auto;
-        text-indent: 2%;
-        text-shadow: 3px 2px 2px white;
-        color: #702121;
-        z-index: 1;
-        max-width: 100%;
-      }
-      .header{
-  box-shadow: 0 2.5px 9px #3d3d3d;
-  border-bottom: 0.5px #6d6d6d;
-}
-body{
-  background-color: #e0e1e2;
-  margin: auto;
-}
-.button{
-  background-color: grey;
-  border:none;
-  color: #dcdde2;
-  padding: 0;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: auto;
-  cursor: pointer;
-  transition-duration: 0.4s;
-  transition-duration: 0.4s;
-  box-shadow: 10px 10px 15px grey;
-  position: absolute;
-  right: 10px;
-  top: 1%;
-  width: 15%;
-  height: 6%;
-  border-radius: 3px;
-  display: inline-block;
-  resize: both;
-}
-.button1 {
-   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-  box-shadow: -3px 1px 10px white;
-}
-.button2:hover {
-   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-  box-shadow: -3px 1px 10px grey;
-  background-color: #545659;
-  color: white;
-}
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.4s;
-}
-.button span: after{
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  transition: 0.4s;
-  color: #FFFFFF;
-  top: 0;
-  right: -20px;
-}
-.button: hover span {
-   padding-right: 5%;
-  color: white;
-}
-.button: hover span: after{
-  opacity: 0;
-  right: 1;
-  color: white; 
-}
-.topnav {
-    background-color: #333;
-    overflow: hidden;
-}
-.topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
-}
-.topnav a.active {
-    background-color: #702121;
-    color: white;
-}
+        .header {
+            background-image: url("header nice10.jpg");
+            background-size: 100% 100%;
+            text-align: left;
+            padding: 7%;
+            resize: horizontal;
+            overflow: auto;
+            text-indent: 2%;
+            text-shadow: 3px 2px 2px white;
+            color: #702121;
+            z-index: 1;
+            max-width: 100%;
+        }
+        .header{
+            box-shadow: 0 2.5px 9px white;
+            border-bottom: 0.5px #6d6d6d;
+        }
+        body{
+            background-color: white;
+             margin:auto;
+             Background-size: cover;
+             background-repeat: no-repeat;
+             width:100%;
+             transition: background-color 500ms ease-in;
+        }
+        .button{
+            background-color: black;
+            border: none;
+            color: white;
+            padding: -3px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: auto;
+            cursor: pointer;
+            transition-duration: 0.4s;
+            transition-duration: 0.4s;
+            box-shadow: 1px 1px 5px black;
+            position: absolute;
+            right: 10px;
+            top: 1%;
+            width: 5%;
+            height: 6%;
+            border-radius: 20px;
+            display: inline-block;
+            resize: both;
+            font-family: cursive;
+            animation-name: slide;
+            animation-duration: 2s;
+        }
+        @keyframes slide{
+            0%{right: -130px;}
+            50%{right: 50px;}
+            100%{right: 10px;}
+            
+        }
+        .button1{
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            box-shadow: -3px 1px 10px white;
+        }
+        .button:hover{
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+            box-shadow: -3px 1px 10px grey;
+            background-color: #302E30;
+            color: white;
+        }
+        .button span{
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.4s;
+        }
+        .button span: after{
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            transition: 0.4s;
+            color: #FFFFFF;
+            top: 0;
+            right: -20px;
+        }
+        .button: hover span{
+            padding-right: 5%;
+            color: white;
+        }
+        .button: hover span :after{
+            opacity: 0;
+            right: 1;
+            color: white;
+        }
+        .topnav{
+              display: block;
+            background-color: black;
+            overflow: hidden;
+            z-index: 500;
+            box-shadow: 5px 10px 25px #1D1D1D;
+        }
+        .topnav a{
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            font-family: cursive;
+        }
+        topnav a:hover{
+            background-color: white;
+            color: black;
+        }
+        .topnav a.active{
+            background-color: #FF6D00;
+            color: black;
+            font-weight: bold;
+            font-family: cursive;
+            border-style: solid;
+            border-radius: 10px;
+        }
 .col-1 {width:8.33%}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -125,24 +146,54 @@ body{
     .col-s-10 {width: 83.33%;}
     .col-s-11 {width: 91.66%;}
     .col-s-12 {width: 100%;}
-       .title {
-            color: #8C2222;
+                  .title {
             text-shadow: 2px 3px 2px grey;
-            font-family: Arial Black, Gadget, sans-serif;
-            font-size: 160%;
-            margin-top: 6%;
+             text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 3px 1px 0 #000;
+           font-family: cursive;
+           font-size: 220%;
+           color: #FC69A8;
+           margin-top: 10%;
+           font-weight:bold;
+            margin-bottom:4%;
         }
-             .paragraph {
-            margin-top: 2%;
+        .subtitle{
+        font-family: cursive;
+        font-size: 140%;
+        margin-top: 5%;
+        Font-weight: bold;
+        color: #FBA737;
+         margin-left: 12%;
+             text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 2px 1px 0 #000;
+        }
+             .subtitle2{
+        font-family: cursive;
+        font-size: 140%;
+        margin-top: 40%;
+        Font-weight: bold;
+        color: #FBA737;
+         margin-left: 12%;
+             text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 2px 1px 0 #000;
+        }
+        
+        .paragraph {
             font-family: Verdana, Gadget, serif;
-            font-size: 100%;
+            font-size: 120%;
             color: black;
             max-width: 60%;
             text-align: justify;
-        }
-                }
-        .image {
-  box-sizing: border-box;
+            margin-top: 3%;
+            margin-bottom: 10%;
+                     
+}
+        .paragraph2 {
+            font-family: Verdana, Gadget, serif;
+            font-size: 120%;
+            color: black;
+            max-width: 60%;
+            text-align: justify;
+            margin-top: 3%;
+            margin-bottom: 45%;
+                     
 }
       .image2{
     width: 95%;
@@ -165,53 +216,490 @@ body{
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
 }
-         hr {
-        width:100%; 
-        height:2px; 
-        background: black;
-        margin-top: 10%;
+           .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+            .rectangle2{
+                      margin-top: 45%;
+        height:260px;
+        width:99.55%;
+        background-color:#ffc4f8;
+        border: solid black 3px;
+        box-shadow: 5px 3px 10px;
+        }
+           .rectangle{
+                      margin-top: -95%;
+        height:260px;
+        width:99.55%;
+        background-color:#ffc4f8;
+        border: solid black 3px;
+        box-shadow: 5px 3px 10px;
+        }
+         .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+             @media screen and (max-width: 1150px) {
+     
+        }
+                .paragraph {
+            margin-top: 1%;
+            font-family: cursive;
+            font-size: 120%;
+            color: black;
+            max-width: 65%;
+            text-align: justify;
+        }
+        .paragraph2 {
+            font-family: Verdana, Gadget, serif;
+            font-size: 120%;
+            color: black;
+            max-width: 65%;
+            text-align: justify;
+            margin-top: 3%;
+            margin-bottom: 45%;
+                     
+}
+                   .topnav a{
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 19px;
+            font-family: cursive;
+        }
+        }
+                @media screen and (max-width: 925px) {
+        fieldset{
+            background-color:white; width:85%;
+margin-left:14%;
+margin-bottom:5%; 
+border-color:black; 
+border-width: 4px;
+   box-shadow: 0px 4px 10px;
+                    }
+                            .paragraph {
+            margin-top: 1%;
+            font-family: cursive;
+            font-size: 100%;
+            color: black;
+            max-width: 70%;
+            text-align: justify;
+        }
+                    .paragraph2 {
+            font-family: Verdana, Gadget, serif;
+            font-size: 100%;
+            color: black;
+            max-width: 70%;
+            text-align: justify;
+            margin-top: 3%;
+            margin-bottom: 45%;
+                     
+}
+                         .topnav a{
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 19px;
+            font-family: cursive;
+        }
+                      .rectangle2{
+                      margin-top: 45%;
+        height:120px;
+        width:99.55%;
+        background-color:#ffc4f8;
+        border: solid black 3px;
+        box-shadow: 5px 3px 10px;
+        }
+           .rectangle{
+                      margin-top: -132%;
+        height:120px;
+        width:99.55%;
+        background-color:#ffc4f8;
+        border: solid black 3px;
+        box-shadow: 5px 3px 10px;
+        }
+
+}
+         @media screen and (max-width: 900px) {
+        fieldset{
+            background-color:white; width:85%;
+margin-left:14%;
+margin-bottom:5%; 
+border-color:black; 
+border-width: 4px;
+   box-shadow: 0px 4px 10px;
+                    }
+                            .paragraph {
+            margin-top: 1%;
+            font-family: cursive;
+            font-size: 100%;
+            color: black;
+            max-width: 70%;
+            text-align: justify;
+        }
+                    .paragraph2 {
+            font-family: Verdana, Gadget, serif;
+            font-size: 100%;
+            color: black;
+            max-width: 70%;
+            text-align: justify;
+            margin-top: 3%;
+            margin-bottom: 45%;
+                     
+}
+                         .topnav a{
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 19px;
+            font-family: cursive;
+        }
+                      .rectangle2{
+                      margin-top: 80%;
+        height:130px;
+        width:99.55%;
+        background-color:#ffc4f8;
+        border: solid black 3px;
+        box-shadow: 5px 3px 10px;
+        }
+           .rectangle{
+                      margin-top: -120%;
+        height:130px;
+        width:99.55%;
+        background-color:#ffc4f8;
+        border: solid black 3px;
+        box-shadow: 5px 3px 10px;
+        }
+
+}
+          @media screen and (max-width: 735px) {
+                      fieldset{
+            background-color:white; width:95%;
+margin-left:14%;
+margin-bottom:5%; 
+border-color:black; 
+border-width: 4px;
+   box-shadow: 0px 4px 10px;
+                    }
+                      .paragraph {
+            margin-top: 1%;
+            font-family: cursive;
+            font-size: 100%;
+            color: black;
+            max-width: 60%;
+            text-align: justify;
+        }
+              .paragraph2 {
+            font-family: Verdana, Gadget, serif;
+            font-size: 100%;
+            color: black;
+            max-width: 60%;
+            text-align: justify;
+            margin-top: 3%;
+            margin-bottom: 45%;
+                     
+}
+                  .topnav a{
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 15px;
+            font-family: cursive;
+        }
+                .rectangle2{
+                      margin-top: 133%;
+        height:120px;
+        width:99.3%;
+        background-color:#ffc4f8;
+        border: solid black 3px;
+        box-shadow: 5px 3px 10px;
+        }
+           .rectangle{
+                      margin-top: -182%;
+        height:120px;
+        width:99.3%;
+        background-color:#ffc4f8;
+        border: solid black 3px;
+        box-shadow: 5px 3px 10px;
+        }
+}
+        @media screen and (max-width: 600px) {
+                  fieldset{
+            background-color:white; width:95%;
+margin-left:10%;
+margin-bottom:5%; 
+border-color:black; 
+border-width: 4px;
+   box-shadow: 0px 4px 10px;
+                    }
+                              .paragraph {
+            margin-top: 1%;
+            font-family: cursive;
+            font-size: 100%;
+            color: black;
+            max-width: 70%;
+            text-align: justify;
+        }
+            .paragraph2 {
+            font-family: Verdana, Gadget, serif;
+            font-size: 100%;
+            color: black;
+            max-width: 70%;
+            text-align: justify;
+            margin-top: 3%;
+            margin-bottom: 45%;
+                     
+}
+                      .topnav a{
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 13px;
+            font-family: cursive;
+        }
+  .rectangle2{
+                      margin-top: 120%;
+        height:120px;
+        width:99%;
+        background-color:#ffc4f8;
+        border: solid black 3px;
+        box-shadow: 5px 3px 10px;
+        }
+           .rectangle{
+                      margin-top: -178%;
+        height:120px;
+        width:99%;
+        background-color:#ffc4f8;
+        border: solid black 3px;
+        box-shadow: 5px 3px 10px;
+        }
+        
+        }
+          @media screen and (max-width: 550px) {
+                            fieldset{
+            background-color:white; width:95%;
+margin-left:10%;
+margin-bottom:5%; 
+border-color:black; 
+border-width: 4px;
+   box-shadow: 0px 4px 10px;
+                    }
+                              .paragraph {
+            margin-top: 1%;
+            font-family: cursive;
+            font-size: 100%;
+            color: black;
+            max-width: 90%;
+            text-align: justify;
+        }
+              .paragraph2 {
+            font-family: Verdana, Gadget, serif;
+            font-size: 100%;
+            color: black;
+            max-width: 90%;
+            text-align: justify;
+            margin-top: 3%;
+            margin-bottom: 45%;
+                     
+}
+                      .topnav a{
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 10px;
+            font-family: cursive;
+        }
+                      .rectangle2{
+                      margin-top: 125%;
+        height:100px;
+        width:98.9%;
+        background-color:#ffc4f8;
+        border: solid black 3px;
+        box-shadow: 5px 3px 10px;
+        }
+           .rectangle{
+                      margin-top: -183%;
+        height:100px;
+        width:98.9%;
+        background-color:#ffc4f8;
+        border: solid black 3px;
+        box-shadow: 5px 3px 10px;
+        }
+        }
+            
+                @media screen and (max-width: 485px) {
+                            fieldset{
+            background-color:white; width:95%;
+margin-left:10%;
+margin-bottom:5%; 
+border-color:black; 
+border-width: 4px;
+   box-shadow: 0px 4px 10px;
+                    }
+                              .paragraph {
+            margin-top: 1%;
+            font-family: cursive;
+            font-size: 100%;
+            color: black;
+            max-width: 90%;
+            text-align: justify;
+        }
+                    .paragraph2 {
+            font-family: Verdana, Gadget, serif;
+            font-size: 100%;
+            color: black;
+            max-width: 90%;
+            text-align: justify;
+            margin-top: 3%;
+            margin-bottom: 45%;
+                     
+}
+                      .topnav a{
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 10px;
+            font-family: cursive;
+        }
+                      .rectangle2{
+                      margin-top: 45%;
+        height:260px;
+        width:95%;
+        background-color:#ffc4f8;
+        border: solid black 3px;
+        box-shadow: 5px 3px 10px;
+        }
+           .rectangle{
+                      margin-top: -99%;
+        height:260px;
+        width:95%;
+        background-color:#ffc4f8;
+        border: solid black 3px;
+        box-shadow: 5px 3px 10px;
+        }
+
         }
     </style>
-    <meta charset="utf-8">
+ <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>LTM Robotics 2018.19</title>
+    <title>LTM Robotics 2020</title>
  <header class="header" style="font=size: 140%"><b></b></header>
   </head>
-    <body>
-<a href="Our_School.html"><button class="button button1 button2 col-2" style="vertical-allign:middle"><span>English</span>
-      </button></a>
-      <div class="topnav">
-        <a href="Menu.html">Menu</a>
-        <a class="active" href="Notre_École.html">Notre &Eacute;cole</a>
-        <a href="Le_Jeu.html">Le Jeux Vertigoal</a>
-        <a href="Notre_Robot.html">Notre Robot</a>
-        <a href="Notre_Équipe.html">Notre &Eacute;quipe</a>
-      </div>
-         <center class="title">Notre &Eacute;cole</center>
-       <center> <div class="paragraph">Notre &eacute;cole, Lake of Two Mountains High School, est situ&eacute;e au 2105 rue Guy à Deux-Montagnes. En 1983, cette 'nouvelle' &eacute;cole a remplac&eacute; l’ancien b&acirc;timent au 203 sur la 14e avenue o&ugrave; de nombreux probl&egrave;mes se sont pos&eacute;s. Parce que nous comptons… &eacute;tudiants, cela cr&eacute;e le sentiment de faire partie d'une grande famille. Tout le monde se conna&icirc;t. Les clubs et les activit&eacute;s le soulignent &eacute;galement. Ceux-ci incluent l’&eacute;quipe de cheerleading, l’&eacute;quipe de basket-ball, l’&eacute;quipe de volley-ball, le club de robotique, l’atelier de menuiserie, le comit&eacute; du livre annuel, les leaders &eacute;tudiants, et plus encore.
+<body class="fade">  <a href="file:///home/chronos/u-592d3ffee1b6e2a08fd84d8acacc5cd6fcf25e8e/MyFiles/Robotics%20Website/Our_School.html"><button class="button button1 button2 col-2" style="vertical-allign:middle"><span>English</span></button></a>
+      <div class="topnav" id="myHeader">
+        <a href="file:///home/chronos/u-592d3ffee1b6e2a08fd84d8acacc5cd6fcf25e8e/MyFiles/Robotics%20Website/Menu.html">Menu</a>
+        <a class="active" href="file:///home/chronos/u-592d3ffee1b6e2a08fd84d8acacc5cd6fcf25e8e/MyFiles/Robotics%20Website/Notre_%C3%89cole.html">Notre &Eacute;cole</a>
+        <a href="file:///home/chronos/u-592d3ffee1b6e2a08fd84d8acacc5cd6fcf25e8e/MyFiles/Robotics%20Website/jeu.html">Le Jeu Flip</a>
+        <a href="file:///home/chronos/u-592d3ffee1b6e2a08fd84d8acacc5cd6fcf25e8e/MyFiles/Robotics%20Website/notre%20robot.html">Notre Robot</a>
+        <a href="file:///home/chronos/u-592d3ffee1b6e2a08fd84d8acacc5cd6fcf25e8e/MyFiles/Robotics%20Website/Équipe.html">Notre &Eacute;quipe</a>
+    </div>
+      <fieldset style="background-color:white; width:70%;
+margin-left:14%;
+margin-bottom:5%; 
+border-color:black; 
+border-width: 4px;box-shadow: 0px 4px 10px;">
+    <center class="title">Notre &Eacute;cole</center>
+    <div class="subtitle">L'histoire de LTM... </div>
+    <center><div class="paragraph">L'école secondaire Lake of Two Mountains, située au 2105, rue Guy dans la ville de Deux-Montagnes, a été construite en 1983; il a remplacé l'ancien bâtiment du même nom qui était situé au 203 14th Avenue. Ici, la première promotion a obtenu son diplôme en 1954. <p> Cette &eacute;cole a aujourd'hui environ 300 élèves. Ils viennent tous d'une variété de villes: Two-Mountains, St-Eustache, Sainte-Marthe-sur-le-Lac, St-Joseph, Oka, Mirabel, et plus encore. </p></div></center>
+ 
+        <div class="subtitle2">Les clubs et les activit&eacute;es... </div>
+       <center> <div class="paragraph2">Dans notre école, de nombreux clubs et activités ont lieu. Des clubs tels que le club de menuiserie, le club de robotique, le comité de graduation, les leaders étudiants, sont appréciés par les étudiants de tous âges; beaucoup d'entre eux acquièrent de nouvelles compétences avec ceux-ci. Il y a aussi beaucoup d'équipes sportives dans l'école. Il s'agit notamment de l'équipe de basket-ball, de l'équipe de futsall, de l'équipe de hockey, de l'équipe de softball et bien plus encore.
+           <p> En ce qui concerne les activités, il y en a beaucoup organisées par l'école. Un voyage en Europe et à New York sont organisés pour les &eacute;tudiants en secondaire 5 où ils peuvent visiter de nouveaux endroits et même découvrir de nouvelles cultures. De plus petites activités sont également organisées telles que des sorties de patinage, des sorties de ski et de snowboard, et même notre événement annuel Color Clash, où toute l'école participe à divers jeux.</p> </div></center>
+        </fieldset> 
+    <div>
+      <div class="rectangle">
+       <img src="82576433_561891984365561_8865310826819485696_n.jpg" alt="convertogame" style="border: solid black;margin-top:2%;
+          width:18%; height: auto;
+          margin-bottom: 5%;
+          display:block;
+          margin-left: 5%;
+           box-shadow: -2px 9px 10px black; position: absolute;border-radius: 9px;">
+     <img src="Screenshot 2020-01-21 at 9.01.52 AM.png" alt="convertogame" style="border: solid black;margin-top:2%;
+          width:20%; height: auto;
+          margin-bottom: 5%;
+          display:block;
+          margin-left: 26%;
+           box-shadow: -2px 9px 10px black; position: absolute;border-radius: 9px;">
+    <img src="Screenshot 2020-01-21 at 8.59.33 AM.png" alt="convertogame" style="border: solid black;margin-top:2%;
+          width:20%; height: auto;
+          margin-bottom: 5%;
+          display:block;
+          margin-left: 49%;
+           box-shadow: -2px 9px 10px black; position: absolute;border-radius: 9px;">
+    <img src="Screenshot 2020-01-21 at 8.56.23 AM.png" alt="convertogame" style="border: solid black;margin-top:2%;
+          width:20%; height: auto;
+          margin-bottom: 5%;
+          display:block;
+          margin-left: 72%;
+           box-shadow: -2px 9px 10px black; position: absolute;border-radius: 9px;">
+    </div>
+    </div>
+    <div>
+    <div class="rectangle2">
+    <img src="Screenshot 2020-01-26 at 4.36.33 PM.png" alt="convertogame" style="border: solid black;margin-top:2%;
+          width:17.8%; height: auto;
+          margin-bottom: 5%;
+          display:block;
+          margin-left: 5.5%;
+           box-shadow: -2px 9px 10px black; position: absolute;border-radius: 9px;">
+    <img src="Screenshot 2020-01-21 at 8.41.05 AM.png
+" alt="convertogame" style="border: solid black;margin-top:2%;
+          width:40%; height: auto;
+          margin-bottom: 5%;
+          display:block;
+          margin-left: 29%;
+           box-shadow: -2px 9px 10px black; position: absolute;border-radius: 9px;">
+    <img src="Screenshot 2020-01-21 at 7.41.38 AM.png" alt="convertogame" style="border: solid black;margin-top:2%;
+          width:21%; height: auto;
+          margin-bottom: 5%;
+          display:block;
+          margin-left: 72%;
+                                                                                 box-shadow: -2px 9px 10px black; position: absolute;border-radius: 9px;"></div></div>
+      <script>
+window.onscroll = function() {myFunction()};
 
-<p>LTM, est &eacute;galement un lieu o&ugrave; les enseignants sont tr&egrave;s inclus. Ils essaient de trouver le temps de nous aider le plus possible. Ils rient avec nous et essaient de nous faire sentir mieux. Notre mentor du club de robotique, par exemple, est un professeur de sciences, M. Truesdale. Il essaie de trouver le temps - ce qu’il n’a pas toujours - pour que nous puissions &ecirc;tre inclus dans ce club incroyable. Cette personne n'est pas la seule &agrave; faire tout son possible pour nous aider.</p>  </div></center>
-            <hr>
-   <center>
-       <div class="row">
-  <div class="column">
-    <img src="IMG_2843.jpg" alt="logo" Border="4" style="border-color:#242424" class="image image2">
-           </div>
-          <div class="column">
-    <img src="IMG_2845.jpg" alt="trophee" Border="4" style="border-color:#242424" class="image image2">
-  </div>
-  <div class="column">
-    <img  src="46495062_738453119851588_450438251400921088_n (1).jpg" alt="think" Border="4" style="border-color:#242424" class="image image2">
-          </div>
-  <div class="column">
-    <img  src="46133172_734322186931348_7187828452202905600_n.jpg" alt="stairs" Border="4" style="border-color:#242424" class="image image2 ">
-  </div>
-          <div class="column">
-              <img src="42670234_709447159418851_7495260815386214400_n.jpg" alt="mural" Border="4" style="border-color:#242424" class="image image2">
-           </div>   
-          <div class="column"> <img  src="49111642_785303351807937_1226733455346237440_n.jpg" alt="robotics" Border="4" style="border-color:#242424" class="image image2">
-          </div>
-           </div>
-    </center>
-          </body>
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+           window.onload = function() {
+        document.body.style.backgroundColor = '#FDD8AB';
+    } 
+</script>
+    <div style="text-align: right;font-family: cursive; color: black; margin-right:3%; margin-bottom:1%;margin-top: 13%;"> Inspired by Dr.Seuss' "<i>The Lorax</i>"</div>
+    </body>
 </html>
